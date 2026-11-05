@@ -1,9 +1,9 @@
 {
-  "release_version": "1.0.0",
-  "release_prepared_utc": "2026-11-05T09:00:07.535138+00:00",
+  "release_version": "1.0.1",
+  "release_prepared_utc": "2026-11-05T13:44:46.631804+00:00",
   "private_research_workspace_preserved": true,
   "history_rewritten_for_this_update": true,
-  "visibility_changed": false,
+  "visibility_changed": true,
   "raw_data_included": false,
   "prepared_feature_rows_included": false,
   "model_weights_included": false,
@@ -243,7 +243,10 @@
     "validation/igaspin/replay.py"
   ],
   "note": "Current release hashes bind exported files only, not excluded frozen raw/model/trace bytes or licence rights. Exact historical IGASPIN execution is not turnkey. Scientific evidence limits remain explicit.",
+  "publication_visibility": "public",
+  "scientific_snapshot_tag": "v1.0.0",
+  "scientific_snapshot_commit": "7534e7d03442db154e081a3cda802e55e00854b2",
+  "packaging_update": "Documentation and package metadata only; scientific code and aggregate results unchanged. Historical verification counts describe v1.0.0, not newly executed tests.",
   "publication_history_policy": "Two cleaned public release snapshots; earlier public commit identifiers superseded. Original private research history retained locally.",
-  "repository_visibility": "public",
-  "scientific_snapshot_tag": "v1.0.0"
+  "repository_visibility": "public"
 }

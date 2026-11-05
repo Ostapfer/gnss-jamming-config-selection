@@ -5,7 +5,7 @@ authors:
   - family-names: "Ferneza"
     given-names: "Ostap"
     orcid: "https://orcid.org/0009-0000-1385-7984"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-11-05"
 type: software
 repository-code: "https://github.com/Ostapfer/gnss-jamming-config-selection"

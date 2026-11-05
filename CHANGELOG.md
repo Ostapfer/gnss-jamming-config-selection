@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 — 5 November 2026
+
+Public release packaging update: refreshed README, publication status, citation/package metadata and file hashes; removed references to excluded exploratory data sources from the current documentation and evidence notes. Scientific code, frozen inputs and all aggregate results are unchanged from v1.0.0. The public history and release tags were rebuilt on 5 November 2026; cite the current tag and commit. Repository visibility is public; no dataset redistribution or code reuse licence is added.
+
 ## 1.0.0 — 5 November 2026
 
 Final code snapshot for the current article. Added completed IGASPIN 80/79 resource results, per-trial/event/P95 aggregate tables and the exact measured runtime bridge/policies. Added the byte-identical ordinal UBX adapter, extracted diagnostic replay function, verified offline input preparation, data-free final-report reconstruction and full 20-vector selection example. Included the complete development technical-repeat audit 60/59 and matched 19 comparison.

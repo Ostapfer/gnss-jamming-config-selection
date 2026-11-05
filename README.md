@@ -1,6 +1,6 @@
 # Resource-aware GNSS jamming detector selection
 
-Final article code snapshot **v1.0.0 · 5 November 2026**. Python research code for selecting configurations from a finite detector library using event deadlines, false-alarm events and measured computational resources. A configuration includes its input adapter, features, calibration, fitted model, thresholds, confirmation/recovery rules and execution platform.
+Final article code snapshot **v1.0.1 · 5 November 2026**. Python research code for selecting configurations from a finite detector library using event deadlines, false-alarm events and measured computational resources. A configuration includes its input adapter, features, calibration, fitted model, thresholds, confirmation/recovery rules and execution platform.
 
 ## Results included in this version
 
@@ -85,4 +85,4 @@ The development evaluation includes the same attack episode used for fitting. It
 - [Protocol](docs/PROTOCOL.md), [external evidence](docs/EXTERNAL_VALIDATION.md), [repository layout](docs/REPOSITORY_LAYOUT.md).
 - [Release notes](CHANGELOG.md), [publication scope](docs/PUBLICATION.md), [citation](CITATION.cff), [rights](RIGHTS.md).
 
-Cite the software version used and the original data providers separately. No general code reuse licence has been granted in this version. This release does not change repository visibility.
+Cite the software version used and the original data providers separately. No general code reuse licence has been granted in this version. The repository is public. The article snapshot is v1.0.0; v1.0.1 updates publication metadata and documentation without changing scientific results. The public history and tags were rebuilt on 5 November 2026; use the current commit identifiers and download checksums.
