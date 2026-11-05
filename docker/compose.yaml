@@ -1,0 +1,26 @@
+name: nulp-gnss
+services:
+  readiness:
+    image: nulp-gnss:limits-v1
+    build:
+      context: ./image
+    platform: linux/arm64
+    labels:
+      nulp.role: readiness-only-not-benchmark
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 128
+    cpu_period: 100000
+    cpu_quota: 100000
+    mem_limit: 512m
+    memswap_limit: 512m
+    tmpfs:
+      - /tmp:rw,nosuid,size=64m
+    volumes:
+      - type: bind
+        source: ${GNSS_INPUT_ROOT:?Set GNSS_INPUT_ROOT to verified input workspace}
+        target: /inputs
+        read_only: true
+    command: [--expected-cpu, '1', --expected-memory-mib, '512']

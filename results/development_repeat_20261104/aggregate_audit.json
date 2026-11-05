@@ -1,0 +1,177 @@
+{
+  "status": "READ_ONLY_AUDIT_COMPLETE",
+  "issues": [],
+  "runs": {
+    "repeat_20261027_r1": {
+      "trial_directories": 60,
+      "complete": 60,
+      "valid_for_timing_comparison": 60
+    },
+    "night_20261103_r1": {
+      "trial_directories": 60,
+      "complete": 60,
+      "valid_for_timing_comparison": 59
+    },
+    "night_20261103_r2": {
+      "trial_directories": 2,
+      "complete": 1,
+      "valid_for_timing_comparison": 1
+    }
+  },
+  "invalid_night_trials": [
+    {
+      "run": "night_20261103_r1",
+      "trial": "pilot_005",
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "spoofing",
+      "status": "COMPLETE",
+      "completed": true,
+      "valid_for_timing_comparison": false,
+      "source_valid": false,
+      "source_p95_ms": 6.054962400037312,
+      "source_max_ms": 359.9235740000495,
+      "offered": 138,
+      "processed": 138,
+      "dropped": 0,
+      "driver_exit": 0,
+      "detector_exit": 0,
+      "OOMKilled": false,
+      "cleanup_intervened": false,
+      "whole_record_p95_ms": 18.125175050010967,
+      "phase_p95_max_within_record_ms": 18.596445949913228,
+      "model_only_p95_ms": 13.284929200040091,
+      "sampled_peak_RAM_MiB": 103.94140625,
+      "confirmed_delay_s": null,
+      "information_delay_s": null,
+      "trace_checks_pass": true
+    }
+  ],
+  "paired_valid_recordings": 59,
+  "complete_valid_config_profile_groups": 19,
+  "all60_functional_traces_match": true,
+  "paired_descriptive_changes": {
+    "whole_record_p95_ms": {
+      "matched_pairs": 59,
+      "ratio_min": 0.33527051329139773,
+      "ratio_median": 1.0734888623914314,
+      "ratio_max": 6.418314980712665,
+      "delta_min": -22.272268648521262,
+      "delta_median": 0.5097036515962827,
+      "delta_max": 90.5701875527143,
+      "increase_count": 38,
+      "decrease_count": 21
+    },
+    "phase_p95_max_within_record_ms": {
+      "matched_pairs": 59,
+      "ratio_min": 0.31715988153189756,
+      "ratio_median": 1.0821800423115335,
+      "ratio_max": 7.075626798813504,
+      "delta_min": -22.40866700249171,
+      "delta_median": 0.5368891511352523,
+      "delta_max": 94.72155165143475,
+      "increase_count": 35,
+      "decrease_count": 24
+    },
+    "model_only_p95_ms": {
+      "matched_pairs": 59,
+      "ratio_min": 0.3183515943969986,
+      "ratio_median": 1.0495404707446039,
+      "ratio_max": 6.506113326124602,
+      "delta_min": -22.33495859854885,
+      "delta_median": 0.15403260035782285,
+      "delta_max": 89.75895020039383,
+      "increase_count": 35,
+      "decrease_count": 24
+    },
+    "sampled_peak_RAM_MiB": {
+      "matched_pairs": 59,
+      "ratio_min": 0.988645425891467,
+      "ratio_median": 1.0,
+      "ratio_max": 1.0107815677397076,
+      "delta_min": -1.16796875,
+      "delta_median": 0.0,
+      "delta_max": 1.09765625,
+      "increase_count": 25,
+      "decrease_count": 28
+    }
+  },
+  "hash_checks": 270,
+  "hash_mismatches": 0,
+  "provenance_policy_scope_identical_across_runs": true,
+  "quantile_definition": "linear interpolation at (n-1)*0.95; whole-record includes calibration; model-only includes inference_executed only; P95max is max of separate condition/calibration P95 across three complete matched valid records, never pooled",
+  "limits": [
+    "r1 is60completed but59schedule-valid, not accepted full60balanced repeat",
+    "r2 onecompleted plusoneuser-interrupted; r3 no measurement claimed",
+    "two matched technical passes only, no3repeat claim, no confidence intervals",
+    "No independent episodes added; sampled RAM is not true kernel peak",
+    "No host-load causal attribution or flight/hardware equivalence"
+  ],
+  "all60_source_time_events_and_condition_metrics_match": true,
+  "r1_outcomes": {
+    "finished_exit0_both_containers": 60,
+    "cleanup_interventions": 0,
+    "OOMKilled": 0,
+    "dropped_messages": 0,
+    "messages_processed": 12200,
+    "readiness_success": 60,
+    "trace_checks_pass": 60
+  },
+  "P95max_config_profile_summary": {
+    "groups": 19,
+    "ratio_min": 0.37208475540706215,
+    "ratio_median": 1.37530739109145,
+    "ratio_max": 6.636747873713541,
+    "DT_cpu1": "NOT EVALUABLE for full3record P95max because night pilot005 is source-invalid; two other records retained separately"
+  },
+  "r3_measured_pilot_directories": 0,
+  "inspected_trial_and_metadata_file_hashes": 2699,
+  "independent_completed_marker_lifecycle_source_limit_checks": 121,
+  "frozen_trial_order_checks": 122,
+  "descriptive_Pareto_matched19": {
+    "profiles_times_tested": 8,
+    "changed_frontiers": 0,
+    "DT_cpu1_excluded_from_both_runs": true,
+    "criteria": [
+      "d_exec",
+      "P95max",
+      "serialized_model_bytes"
+    ],
+    "conditions": "X*=1; T3/T10; Y*=0 separately for benign/spoofing; per fixed profile",
+    "not_full20_comparison": true
+  },
+  "RF_quota_ranges": [
+    {
+      "run": "repeat_20261027_r1",
+      "profile": "cpu1_ram512",
+      "whole_record_p95_min_ms": 32.44749374935054,
+      "whole_record_p95_max_ms": 34.31194115055405,
+      "P95max_ms": 34.69109940051566,
+      "d_exec_s": 2.01666066200022
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "profile": "cpu025_ram512",
+      "whole_record_p95_min_ms": 96.04054554729375,
+      "whole_record_p95_max_ms": 101.58387685114575,
+      "P95max_ms": 102.5756357508726,
+      "d_exec_s": 2.0803376200016714
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile": "cpu1_ram512",
+      "whole_record_p95_min_ms": 33.19669834982051,
+      "whole_record_p95_max_ms": 34.042820500053494,
+      "P95max_ms": 39.21121669991404,
+      "d_exec_s": 2.0218819539983883
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile": "cpu025_ram512",
+      "whole_record_p95_min_ms": 75.21520855007111,
+      "whole_record_p95_max_ms": 186.61073310000805,
+      "P95max_ms": 192.84563739996653,
+      "d_exec_s": 2.0587127040013797
+    }
+  ]
+}

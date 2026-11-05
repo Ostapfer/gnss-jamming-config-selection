@@ -1,0 +1,21 @@
+{
+  "experiment": "igaspin-resource-20261104",
+  "completed_trials": 80,
+  "source_schedule_valid_trials": 79,
+  "excluded_timing_trial": "igaspin_017",
+  "original_manifest_sha256": "cd6c23c6b73ab4f6f6efa1abc8633057c34721d9c6455800a2a2a285f9e70b86",
+  "continuation_amendment_sha256": "ae41c0217f3de8a17b5cfd2cfe531a0de5f6b6b7b79fad044c8e94f6b539c2bf",
+  "historical_image_id": "sha256:eda35b3de2ca15569ace2a8e6eb59dc999e945e2f6fa6cfeb14d422c1f9302d5",
+  "measurement_boundary": "prepared NAV-trigger message availability to event ready; UBX decoding and RF/NAV association excluded",
+  "source_clock": "original temporal order, approximately 1 Hz; integer receiver UTC differences before float conversion",
+  "source_gate": {
+    "p95_lateness_max_ms": 100,
+    "maximum_lateness_max_ms": 250
+  },
+  "platform": "Apple M2; Linux ARM64 Docker Desktop VM; not target-UAV hardware equivalence",
+  "raw_data_included": false,
+  "fitted_models_included": false,
+  "full_traces_included": false,
+  "historical_originals_relocated": false,
+  "continuation": "Primary controller stopped after017; prospectively accepted supervisor completed018\u2013080 without retrying017."
+}

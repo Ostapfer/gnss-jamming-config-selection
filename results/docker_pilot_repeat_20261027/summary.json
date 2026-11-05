@@ -1,0 +1,33 @@
+{
+  "status": "VERIFIED_COMPLETED_DEVELOPMENT_PILOT",
+  "attempts": 60,
+  "complete_attempts": 60,
+  "processed_messages_across_technical_trials": 12200,
+  "configs": 5,
+  "profiles": 4,
+  "recordings": 3,
+  "unique_raw_rows": 610,
+  "unique_jamming_episodes": 1,
+  "same_decisions_across_profiles": true,
+  "decision_signature_groups": 15,
+  "queue_max_over_time_min": 1,
+  "queue_max_over_time_max": 1,
+  "drops": 0,
+  "scenario_rows": 540,
+  "empirical_pass_rows": 360,
+  "evidence": "INSUFFICIENT EVIDENCE",
+  "independent_validation": false,
+  "native_latency_budgets_transferred": false,
+  "quantile_convention": "linear empirical percentile; per recording; phase-max screening objective is a maximum of quantiles, not a pooled percentile",
+  "queue_correction": "Original zero is observed immediately after processing starts. Derived acceptance/start sweep finds transient waiting; original artifacts unchanged.",
+  "memory_scope": "100ms sampled cgroup charges; separate driver budget; combined value is maximum paired-sample sum; kernel memory.peak unavailable",
+  "cpu_scope": "postcal CPU uses after_calibration-to-final lifecycle snapshots; separate original startup-inclusive external CPU field",
+  "pareto_objectives": [
+    "confirmed_delay_s",
+    "processing_phase_p95_max_ms",
+    "model_bytes"
+  ],
+  "pareto_status": "descriptive post-processing of finite measured subset; no universal minimum or statistical winner",
+  "run_started_utc": "2026-10-27T09:18:25.165181+00:00",
+  "run_finished_utc": "2026-10-27T12:47:17.689990+00:00"
+}

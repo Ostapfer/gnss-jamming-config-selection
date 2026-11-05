@@ -1,0 +1,3 @@
+# Preservation and Git strategy
+
+The research workspace and Git history remain local and unchanged by export. The publication directory uses a fresh initial Git history with curated source, protocol, references and selected results. Local raw data, models, provider correspondence, internal working notes, backups, historical duplicate outputs and machine paths are excluded. Public metadata derivatives are labelled and hashed separately. See [publication policy](PUBLICATION.md) and [reproduction guide](REPRODUCIBILITY.md). The GitHub upload uses only this curated history; the original research history remains local.

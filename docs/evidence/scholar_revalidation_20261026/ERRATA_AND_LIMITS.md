@@ -1,0 +1,14 @@
+# Corrections and limits of the source audit
+
+- The correct title for DOI 10.1038/s41598-025-10567-0 is **Real-Time jamming detection using windowing and hybrid machine learning models for pre-saturation alerts**. Authors on the publisher page: J. Sormayli, M. Darvishi, K. Zarrinnegar, M. R. Mosavi; Scientific Reports 15, 24748 (2025). The earlier GNSS-spoofing/UAV machine-learning title in the preceding source audit is incorrect for this DOI. Archived raw reports are not rewritten; the manuscript uses the corrected source card and bibliographic metadata.
+- Karimov page 1521 from the archived supplementary review was rejected because it conflicts with the stated proceedings range, 1507–1518. The manuscript may use the broad methodological claim and a section-level source pointer, without that page locator. Exact source-version/page mappings require further clarification if needed.
+- Do not carry detailed numerical Fogify accuracy claims/formulas from the supplement into the manuscript on the basis of this handoff; use the broad resource-shaping/hardware-validation claim. This is a conservative narrowing, not a conclusion that the formulas are wrong.
+- Chen was verified at the institutional-abstract level, not at the level of its complete implementation. This is not evidence for an external producer architecture, our quotas or intrinsic RAM.
+- The year 2025 assigned to the PX4 schema page was not verified; the corrected card has year=null and version=v1.14. The schema guide does not establish the firmware/driver identity of our raw files.
+- Exact Arp pitfall numbers, the primary ACM text for Kaufman and complete Brown metadata were not confirmed; do not fill them in from memory.
+- The research draft's article_wording described the producer/watchdog as already implemented. The corrected proposal uses prospective/proposed wording because the scientific implementation hold was in effect.
+- The baseline code rejects zero/nonfinite baselines; an unnoticed change to b<=0 was rejected. Near-zero amplification is not removed merely by deciding against an epsilon.
+- The D_X order statistic is an AUTHOR_DEFINED change to the definition, not a new algorithm established by the literature. A direct multiobjective-censoring precedent was not verified.
+- Independent sessions do not automatically establish binomial/HPP assumptions; the statistical engine is not yet implemented. Instrumental RF measurement at the antenna could strengthen exposure evidence; it is not a universally mandatory standard.
+- Scholar displayed visible records for A/C but showed a Google unusual-traffic CAPTCHA for B. It was not bypassed. Supplements and C2/C3 explicitly used primary/general-web fallback; a successful complete Scholar review for all nine groups is not claimed.
+- Partial working reports are not independent evidence; primary sources and cards with explicit access levels take precedence for citation.

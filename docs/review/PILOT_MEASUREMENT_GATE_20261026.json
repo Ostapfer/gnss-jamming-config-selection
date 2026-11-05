@@ -1,0 +1,81 @@
+{
+  "status": "VERIFIED_FOR_MEASUREMENT",
+  "date": "2026-10-26",
+  "review_basis": "Previously accepted scoped design; actual engineering evidence checked separately from the literature review",
+  "run_root": "docker/artifacts/pilot-v1/run_20261026_r3",
+  "frozen_manifest_sha256": "a45cffc6cec4882121b8fdf8db3210ff90e6987699213575668e3edc5256890d",
+  "image_id": "sha256:8cd588cd4ae4eb8451982bbc7bb5259022f3d7b6fcc4ce3282f6d3aad1ad19b4",
+  "preflight": {
+    "status": "PASS",
+    "gate": "G2-G5",
+    "checks": [
+      {
+        "case": "normal",
+        "expected": "COMPLETE",
+        "actual": "COMPLETE",
+        "passed": true
+      },
+      {
+        "case": "normal_reference",
+        "expected": "COMPLETE",
+        "actual": "COMPLETE",
+        "passed": true
+      },
+      {
+        "case": "normal_cpu1",
+        "expected": "COMPLETE",
+        "actual": "COMPLETE",
+        "passed": true
+      },
+      {
+        "case": "normal_cpu05",
+        "expected": "COMPLETE",
+        "actual": "COMPLETE",
+        "passed": true
+      },
+      {
+        "case": "backlog_drop",
+        "expected": "IN_SCOPE_PIPELINE_FAILURE",
+        "actual": "IN_SCOPE_PIPELINE_FAILURE",
+        "passed": true
+      },
+      {
+        "case": "startup_failure",
+        "expected": "DETECTOR_EXIT_FAILURE",
+        "actual": "DETECTOR_EXIT_FAILURE",
+        "passed": true
+      },
+      {
+        "case": "midstream_failure",
+        "expected": "DETECTOR_EXIT_FAILURE",
+        "actual": "DETECTOR_EXIT_FAILURE",
+        "passed": true
+      }
+    ],
+    "provenance_sha256": "5f927c048f2662a8c6441be5187e45b469ca6832e945aa46b49ac460fbe56902",
+    "parity_sha256": "ec9a247616b7aaf586a50d3e65fde8d7d2f43228db6a692475f23b8374c7bc93",
+    "scientific_pilot_started": false
+  },
+  "parity_comparisons": 15,
+  "parity_rows": 3050,
+  "input_hash_count": 75,
+  "development_only": true,
+  "independent_validation": false,
+  "failure_fixture_observation": {
+    "offered": 160,
+    "processed": 81,
+    "dropped": 79,
+    "source_valid": true
+  },
+  "preserved_failed_preparations": [
+    "run_20261026_r1: Compose tmpfs YAML corrected",
+    "run_20261026_r2: overload fixture too short; extended synthetic count only"
+  ],
+  "limitations": [
+    "CPU/RAM sensitivity on Docker Desktop ARM64 VM, no UAV processor fidelity",
+    "Driver budget outside detector budget",
+    "100ms sampled memory maximum; unsupported kernel peak null",
+    "ML future-informed development fits; no independent validation",
+    "One technical trial per pair"
+  ]
+}

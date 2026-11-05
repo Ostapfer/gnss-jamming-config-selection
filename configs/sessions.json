@@ -1,0 +1,50 @@
+[
+  {
+    "session_id": "jamming",
+    "path": "Live GPS Spoofing and Jamming/GPS Jamming/ace-jamming-log_1_2033-8-19-16-46-46_vehicle_gps_position_0.csv",
+    "source": "Addressing-Data-Leakage-in-UAV-Cyberattack-Detection-A-Realistic-Machine-Learning-Benchmark",
+    "source_commit": "12b2bff3bf1192cc9348e748bf1d910e2bd2e891",
+    "attack_type": "jamming",
+    "onset_us": 504844877,
+    "end_us": null,
+    "onset_source": "legacy hardcoded onset; cross-check processed malicious transition",
+    "onset_uncertainty": "physical jammer-on offset unknown",
+    "receiver": "unknown",
+    "platform": "unknown",
+    "role": "development",
+    "sha256": "104ba073f0d5fcc7d700c409ddc3b9d04f805e2f0f9d0cca1d06501a4216c8d6",
+    "bytes": 36952
+  },
+  {
+    "session_id": "spoofing",
+    "path": "Live GPS Spoofing and Jamming/GPS Spoofing/ace-spoofing-hackrf-log_5_2033-8-19-17-14-18_vehicle_gps_position_0.csv",
+    "source": "Addressing-Data-Leakage-in-UAV-Cyberattack-Detection-A-Realistic-Machine-Learning-Benchmark",
+    "source_commit": "12b2bff3bf1192cc9348e748bf1d910e2bd2e891",
+    "attack_type": "spoofing",
+    "onset_us": 375744085,
+    "end_us": null,
+    "onset_source": "legacy hardcoded onset; cross-check processed malicious transition",
+    "onset_uncertainty": "physical jammer-on offset unknown",
+    "receiver": "unknown",
+    "platform": "unknown",
+    "role": "development",
+    "sha256": "e151345498d3fc4a83c2e61904ee4ddc88b7d52460a31bf5b5862861f7cd01cf",
+    "bytes": 22099
+  },
+  {
+    "session_id": "benign",
+    "path": "Live GPS Spoofing and Jamming/Benign Flight/ace-benign-log_0_2033-8-19-16-27-30_vehicle_gps_position_0.csv",
+    "source": "Addressing-Data-Leakage-in-UAV-Cyberattack-Detection-A-Realistic-Machine-Learning-Benchmark",
+    "source_commit": "12b2bff3bf1192cc9348e748bf1d910e2bd2e891",
+    "attack_type": "benign",
+    "onset_us": null,
+    "end_us": null,
+    "onset_source": "legacy hardcoded onset; cross-check processed malicious transition",
+    "onset_uncertainty": "physical jammer-on offset unknown",
+    "receiver": "unknown",
+    "platform": "unknown",
+    "role": "development",
+    "sha256": "b4ad4899367b3d4f0b9c6626d2fa808bf94293c45e0df5ca7aa525062bfe54c5",
+    "bytes": 44682
+  }
+]

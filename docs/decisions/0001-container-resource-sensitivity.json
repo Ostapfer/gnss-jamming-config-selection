@@ -1,0 +1,62 @@
+{
+  "decision_id": "0001-container-resource-sensitivity",
+  "date": "2026-10-26",
+  "question": "How to evaluate the frozen detector implementation under controlled CPU/RAM limits without claiming UAV-processor equivalence?",
+  "scope": "Five selected configurations, four profiles, three development recordings, one technical trial: 60 pairs; code design and later integration only",
+  "research": {
+    "proposal": "docs/review/RESEARCH_PROPOSAL_V2.md",
+    "recommended": "Container-enforced resource sensitivity in a declared Linux ARM64 VM",
+    "alternatives": [
+      "Target-calibrated virtual approximation requiring hardware evidence",
+      "Real hardware or HIL extension"
+    ]
+  },
+  "design_review_round_1": {
+    "report": "docs/review/DESIGN_AUDIT.md",
+    "blockers": [
+      "Full Runner input-root integration",
+      "Producer outside detector cgroup",
+      "Bounded instrumentation and memory/failure attribution"
+    ]
+  },
+  "evidence_validation": {
+    "report": "docs/evidence/CONTAINER_METHOD_EVIDENCE.md",
+    "ledger": "docs/evidence/citation_ledger.json",
+    "verified_core_source_ids": [
+      "CHEN2026",
+      "FOGIFY2020",
+      "IOTIER2021"
+    ],
+    "verdict": "METHOD_PRECEDENT_FOUND_TARGET_HARDWARE_EQUIVALENCE_UNSUPPORTED",
+    "caveat": "Chen abstract verifies constrained embedded-like evaluation and bounded logging; indexed-only host/Pi4 details are not gate evidence"
+  },
+  "design_review_round_2": {
+    "report": "docs/review/EVIDENCE_REVIEW.md",
+    "verdict": "ACCEPT_FOR_IMPLEMENTATION",
+    "clarifications": [
+      "Accepted ingress availability instead of pre-send timestamp",
+      "Required functional parity for selected five, broader 66-model coverage optional",
+      "Numeric tolerance cannot change threshold crossings/states/events",
+      "Separate design and measurement gates"
+    ]
+  },
+  "design_gate": "ACCEPT_FOR_IMPLEMENTATION",
+  "experiment_implementation": {
+    "status": "VERIFIED_BY_RECORDED_PREFLIGHT",
+    "acceptance_checks": [
+      "G2 full pipeline paths and functional parity",
+      "G3 independent source, clock and queue evidence",
+      "G4 bounded instrumentation and memory/overhead",
+      "G5 complete failure journal",
+      "G6 frozen policies/hashes/order"
+    ]
+  },
+  "measurement_gate": "VERIFIED_FOR_MEASUREMENT",
+  "article_handoff": {
+    "claim_map": "docs/evidence/ARTICLE_HANDOFF.md",
+    "references": "docs/evidence/verified_references.bib"
+  },
+  "prior_frozen_artifacts_preserved": true,
+  "execution_hold": "Superseded by explicit user instruction to prepare and start selected pilot. Measurement gate still required before measured trials.",
+  "measurement_gate_record": "docs/review/PILOT_MEASUREMENT_GATE_20261026.json"
+}

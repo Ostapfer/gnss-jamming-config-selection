@@ -1,0 +1,596 @@
+{
+  "configs": [
+    "RULE_noise_t2_d0.5_c2",
+    "DT_f3_p2_d0.5_c2",
+    "KNN_f3_p1_d0.5_c2",
+    "SVM_f3_p2_d0_c2",
+    "RF_f3_p3_d0.5_c2"
+  ],
+  "profiles": [
+    {
+      "id": "guarded_reference",
+      "cpu_quota_us": null,
+      "memory_mib": 1536
+    },
+    {
+      "id": "cpu1_ram512",
+      "cpu_quota_us": 100000,
+      "memory_mib": 512
+    },
+    {
+      "id": "cpu05_ram512",
+      "cpu_quota_us": 50000,
+      "memory_mib": 512
+    },
+    {
+      "id": "cpu025_ram512",
+      "cpu_quota_us": 25000,
+      "memory_mib": 512
+    }
+  ],
+  "cpu_period_us": 100000,
+  "seed": 42,
+  "planned_order": [
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 1
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 2
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 3
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 4
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 5
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 6
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 7
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 8
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 9
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 10
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 11
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 12
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 13
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 14
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 15
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 16
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 17
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 18
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 19
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 20
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 21
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 22
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 23
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 24
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 25
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 26
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 27
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 28
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 29
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 30
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 31
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 32
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 33
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 34
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 35
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 36
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 37
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 38
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 39
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 40
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 41
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 42
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 43
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 44
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 45
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 46
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 47
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 48
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 49
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 50
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 51
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 52
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 53
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 54
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 55
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 56
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 57
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 58
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 59
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 60
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 61
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 62
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 63
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 64
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 65
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 66
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 67
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 68
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 69
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 70
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "expected_clean__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 71
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 72
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "expected_clean__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 73
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 74
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 75
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 76
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 77
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_1",
+      "technical_trial": 1,
+      "planned_sequence": 78
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 79
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming__rf_ordinal_0",
+      "technical_trial": 1,
+      "planned_sequence": 80
+    }
+  ],
+  "total_trials": 80
+}

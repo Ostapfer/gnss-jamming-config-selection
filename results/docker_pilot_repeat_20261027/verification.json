@@ -1,0 +1,25 @@
+{
+  "scope": "Completed-repeat analysis, not independent validation",
+  "attempts_verified": 60,
+  "raw_sequences_and_latency_quantiles_verified": true,
+  "clock_identity_and_actual_resource_limits_verified": true,
+  "decisions_equal_across_profiles": true,
+  "queue_sweep_integral_checked": true,
+  "original_trial_source_hashes_still_match": true,
+  "analysis_script_hash_current": true,
+  "focused_regression_tests_passed": 4,
+  "archived_table_reconstruction": {
+    "report_body_matches": true,
+    "all_four_png_bytes_match": true,
+    "raw_trace_reverification_by_renderer": false
+  },
+  "figure_sha256": {
+    "active_state_windows.png": "825b22a0a7cd1e7fd6ad371a064b2a62d536037d8aea3d77d34676d6c206fb0c",
+    "startup_and_postcal_cpu.png": "512ff108ef9513f01355f1b2b1875d2e8eb2dc3dbb4a83abfc4f661f9af35035",
+    "memory_and_model_size.png": "3cdd0f6aacb61a848d3a0650338873a5918c7059d6a18980b2b3b060d385185d",
+    "quota_delay_and_processing.png": "645ad589e555cebe0526b5bc4597cb2f3489b626800d4b6e9de672081ae38716"
+  },
+  "claim_review": "Accepted with stated development, censoring, memory, timing and independence limitations",
+  "new_training_or_replay": false,
+  "independent_validation": false
+}

@@ -1,0 +1,67 @@
+candidate_id,algorithm,features,profile,thresholds,training,causal,model_bytes,fit_rows,nodes,depth,stored_samples,stored_array_bytes,support_vectors,trees
+DT_f1_p1,DT,['noise_per_ms'],{'max_depth': 2},"[0.5, 0.75]",development in-sample; future attack rows included,False,1696,299,7.0,2.0,,,,
+DT_f1_p2,DT,['noise_per_ms'],{'max_depth': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,1856,299,9.0,3.0,,,,
+DT_f1_p3,DT,['noise_per_ms'],{'max_depth': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,2336,299,15.0,5.0,,,,
+KNN_f1_p1,KNN,['noise_per_ms'],{'n_neighbors': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,9407,299,,,299.0,4784.0,,
+KNN_f1_p2,KNN,['noise_per_ms'],{'n_neighbors': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,9407,299,,,299.0,4784.0,,
+KNN_f1_p3,KNN,['noise_per_ms'],{'n_neighbors': 9},"[0.5, 0.75]",development in-sample; future attack rows included,False,9407,299,,,299.0,4784.0,,
+SVM_f1_p1,SVM,['noise_per_ms'],{'C': 0.1},"[0.0, 0.5]",development in-sample; future attack rows included,False,3235,299,,,,,59.0,
+SVM_f1_p2,SVM,['noise_per_ms'],{'C': 1.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,2563,299,,,,,35.0,
+SVM_f1_p3,SVM,['noise_per_ms'],{'C': 10.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,2395,299,,,,,29.0,
+RF_f1_p1,RF,['noise_per_ms'],"{'n_estimators': 20, 'max_depth': 3}","[0.5, 0.75]",development in-sample; future attack rows included,False,19448,299,156.0,3.0,,,,20.0
+RF_f1_p2,RF,['noise_per_ms'],"{'n_estimators': 50, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,61098,299,572.0,5.0,,,,50.0
+RF_f1_p3,RF,['noise_per_ms'],"{'n_estimators': 200, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,241695,299,2306.0,5.0,,,,200.0
+DT_f2_p1,DT,['eph'],{'max_depth': 2},"[0.5, 0.75]",development in-sample; future attack rows included,False,1536,299,5.0,2.0,,,,
+DT_f2_p2,DT,['eph'],{'max_depth': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,1856,299,9.0,3.0,,,,
+DT_f2_p3,DT,['eph'],{'max_depth': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,2496,299,17.0,5.0,,,,
+KNN_f2_p1,KNN,['eph'],{'n_neighbors': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,9407,299,,,299.0,4784.0,,
+KNN_f2_p2,KNN,['eph'],{'n_neighbors': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,9407,299,,,299.0,4784.0,,
+KNN_f2_p3,KNN,['eph'],{'n_neighbors': 9},"[0.5, 0.75]",development in-sample; future attack rows included,False,9407,299,,,299.0,4784.0,,
+SVM_f2_p1,SVM,['eph'],{'C': 0.1},"[0.0, 0.5]",development in-sample; future attack rows included,False,3207,299,,,,,58.0,
+SVM_f2_p2,SVM,['eph'],{'C': 1.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,2535,299,,,,,34.0,
+SVM_f2_p3,SVM,['eph'],{'C': 10.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,2395,299,,,,,29.0,
+RF_f2_p1,RF,['eph'],"{'n_estimators': 20, 'max_depth': 3}","[0.5, 0.75]",development in-sample; future attack rows included,False,21208,299,178.0,3.0,,,,20.0
+RF_f2_p2,RF,['eph'],"{'n_estimators': 50, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,65418,299,626.0,5.0,,,,50.0
+RF_f2_p3,RF,['eph'],"{'n_estimators': 200, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,259455,299,2528.0,5.0,,,,200.0
+DT_f3_p1,DT,"['noise_per_ms', 'eph']",{'max_depth': 2},"[0.5, 0.75]",development in-sample; future attack rows included,False,1536,299,5.0,2.0,,,,
+DT_f3_p2,DT,"['noise_per_ms', 'eph']",{'max_depth': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,1856,299,9.0,3.0,,,,
+DT_f3_p3,DT,"['noise_per_ms', 'eph']",{'max_depth': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,2176,299,13.0,5.0,,,,
+KNN_f3_p1,KNN,"['noise_per_ms', 'eph']",{'n_neighbors': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,12063,299,,,299.0,7176.0,,
+KNN_f3_p2,KNN,"['noise_per_ms', 'eph']",{'n_neighbors': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,12063,299,,,299.0,7176.0,,
+KNN_f3_p3,KNN,"['noise_per_ms', 'eph']",{'n_neighbors': 9},"[0.5, 0.75]",development in-sample; future attack rows included,False,12063,299,,,299.0,7176.0,,
+SVM_f3_p1,SVM,"['noise_per_ms', 'eph']",{'C': 0.1},"[0.0, 0.5]",development in-sample; future attack rows included,False,3731,299,,,,,59.0,
+SVM_f3_p2,SVM,"['noise_per_ms', 'eph']",{'C': 1.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,2867,299,,,,,35.0,
+SVM_f3_p3,SVM,"['noise_per_ms', 'eph']",{'C': 10.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,2435,299,,,,,23.0,
+RF_f3_p1,RF,"['noise_per_ms', 'eph']","{'n_estimators': 20, 'max_depth': 3}","[0.5, 0.75]",development in-sample; future attack rows included,False,20248,299,166.0,3.0,,,,20.0
+RF_f3_p2,RF,"['noise_per_ms', 'eph']","{'n_estimators': 50, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,61418,299,576.0,5.0,,,,50.0
+RF_f3_p3,RF,"['noise_per_ms', 'eph']","{'n_estimators': 200, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,241855,299,2308.0,5.0,,,,200.0
+DT_f4_p1,DT,"['noise_per_ms', 'eph', 'epv']",{'max_depth': 2},"[0.5, 0.75]",development in-sample; future attack rows included,False,1536,299,5.0,2.0,,,,
+DT_f4_p2,DT,"['noise_per_ms', 'eph', 'epv']",{'max_depth': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,1856,299,9.0,3.0,,,,
+DT_f4_p3,DT,"['noise_per_ms', 'eph', 'epv']",{'max_depth': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,2016,299,11.0,4.0,,,,
+KNN_f4_p1,KNN,"['noise_per_ms', 'eph', 'epv']",{'n_neighbors': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,14719,299,,,299.0,9568.0,,
+KNN_f4_p2,KNN,"['noise_per_ms', 'eph', 'epv']",{'n_neighbors': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,14719,299,,,299.0,9568.0,,
+KNN_f4_p3,KNN,"['noise_per_ms', 'eph', 'epv']",{'n_neighbors': 9},"[0.5, 0.75]",development in-sample; future attack rows included,False,14719,299,,,299.0,9568.0,,
+SVM_f4_p1,SVM,"['noise_per_ms', 'eph', 'epv']",{'C': 0.1},"[0.0, 0.5]",development in-sample; future attack rows included,False,4183,299,,,,,58.0,
+SVM_f4_p2,SVM,"['noise_per_ms', 'eph', 'epv']",{'C': 1.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,3215,299,,,,,36.0,
+SVM_f4_p3,SVM,"['noise_per_ms', 'eph', 'epv']",{'C': 10.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,2819,299,,,,,27.0,
+RF_f4_p1,RF,"['noise_per_ms', 'eph', 'epv']","{'n_estimators': 20, 'max_depth': 3}","[0.5, 0.75]",development in-sample; future attack rows included,False,21048,299,176.0,3.0,,,,20.0
+RF_f4_p2,RF,"['noise_per_ms', 'eph', 'epv']","{'n_estimators': 50, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,65258,299,624.0,5.0,,,,50.0
+RF_f4_p3,RF,"['noise_per_ms', 'eph', 'epv']","{'n_estimators': 200, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,256735,299,2494.0,5.0,,,,200.0
+DT_f5_p1,DT,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']",{'max_depth': 2},"[0.5, 0.75]",development in-sample; future attack rows included,False,1536,299,5.0,2.0,,,,
+DT_f5_p2,DT,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']",{'max_depth': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,1696,299,7.0,3.0,,,,
+DT_f5_p3,DT,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']",{'max_depth': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,1856,299,9.0,4.0,,,,
+KNN_f5_p1,KNN,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']",{'n_neighbors': 3},"[0.5, 0.75]",development in-sample; future attack rows included,False,22687,299,,,299.0,16744.0,,
+KNN_f5_p2,KNN,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']",{'n_neighbors': 5},"[0.5, 0.75]",development in-sample; future attack rows included,False,22687,299,,,299.0,16744.0,,
+KNN_f5_p3,KNN,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']",{'n_neighbors': 9},"[0.5, 0.75]",development in-sample; future attack rows included,False,22687,299,,,299.0,16744.0,,
+SVM_f5_p1,SVM,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']",{'C': 0.1},"[0.0, 0.5]",development in-sample; future attack rows included,False,5443,299,,,,,55.0,
+SVM_f5_p2,SVM,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']",{'C': 1.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,3267,299,,,,,23.0,
+SVM_f5_p3,SVM,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']",{'C': 10.0},"[0.0, 0.5]",development in-sample; future attack rows included,False,2655,299,,,,,14.0,
+RF_f5_p1,RF,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']","{'n_estimators': 20, 'max_depth': 3}","[0.5, 0.75]",development in-sample; future attack rows included,False,21208,299,178.0,3.0,,,,20.0
+RF_f5_p2,RF,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']","{'n_estimators': 50, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,63178,299,598.0,5.0,,,,50.0
+RF_f5_p3,RF,"['noise_per_ms', 'eph', 'epv', 'hdop', 'vdop', 'satellites_used']","{'n_estimators': 200, 'max_depth': 5}","[0.5, 0.75]",development in-sample; future attack rows included,False,243295,299,2326.0,5.0,,,,200.0
+RULE_noise_t1,RULE,['noise_per_ms'],"{'relative_threshold': 0.25, 'combination': 'single'}",[0.5],no supervised fit; calibration-only online; exploratory preselected constants,True,79,0,,,,,,
+RULE_noise_t2,RULE,['noise_per_ms'],"{'relative_threshold': 0.5, 'combination': 'single'}",[0.5],no supervised fit; calibration-only online; exploratory preselected constants,True,79,0,,,,,,
+RULE_noise_t3,RULE,['noise_per_ms'],"{'relative_threshold': 1.0, 'combination': 'single'}",[0.5],no supervised fit; calibration-only online; exploratory preselected constants,True,79,0,,,,,,
+RULE_noise_eph_t1,RULE,"['noise_per_ms', 'eph']","{'relative_threshold': 0.25, 'combination': 'AND'}",[0.5],no supervised fit; calibration-only online; exploratory preselected constants,True,79,0,,,,,,
+RULE_noise_eph_t2,RULE,"['noise_per_ms', 'eph']","{'relative_threshold': 0.5, 'combination': 'AND'}",[0.5],no supervised fit; calibration-only online; exploratory preselected constants,True,79,0,,,,,,
+RULE_noise_eph_t3,RULE,"['noise_per_ms', 'eph']","{'relative_threshold': 1.0, 'combination': 'AND'}",[0.5],no supervised fit; calibration-only online; exploratory preselected constants,True,79,0,,,,,,

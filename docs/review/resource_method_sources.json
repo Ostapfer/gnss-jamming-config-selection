@@ -1,0 +1,58 @@
+{
+  "checked_on": "2026-10-26",
+  "reviewed_commit": "932ced3",
+  "scope": "Primary documentation and scientific sources; read-only inspection, no runtime execution",
+  "sources": [
+    {
+      "id": "kernel_cgroup2",
+      "url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "locator": "CPU Interface Files: cpu.max, cpu.stat; Memory Interface Files: memory.max/current/events/stat/swap.max",
+      "supports": "Quota is a per-period bandwidth ceiling; counters distinguish usage, throttling and OOM; cgroup memory is broader than model RSS.",
+      "does_not_support": "Any particular quota/RAM grid as a GNSS standard, or treating unavailable counters on Linux5.15 as zero"
+    },
+    {
+      "id": "docker_constraints",
+      "url": "https://docs.docker.com/engine/containers/resource_constraints/",
+      "locator": "CPU; Limit a container access to memory; memory-swap details",
+      "supports": "Actual container CPU/memory limits and swap-off via equal memory and memory-swap ceilings.",
+      "does_not_support": "SBC hardware equivalence or inference that successful loading validates event deadlines"
+    },
+    {
+      "id": "docker_desktop",
+      "url": "https://docs.docker.com/desktop/settings-and-maintenance/settings/",
+      "locator": "Resources > Advanced: CPU limit, Memory limit, Swap",
+      "supports": "DockerVM resources form a separate environment layer requiring documentation.",
+      "inference": "Use matched Linuximage/VM reference; record unrelated workloads rather than silently assuming host exclusivity"
+    },
+    {
+      "id": "google_benchmark",
+      "url": "https://github.com/google/benchmark/blob/main/docs/user_guide.md",
+      "locator": "benchmark_enable_random_interleaving; Timing and Repetition Control",
+      "supports": "Repetition and randomized interleaving can reduce system-state bias.",
+      "does_not_support": "A universal sufficient count of repetitions, independent session evidence, or replacing original-rate replay with a microbenchmark"
+    },
+    {
+      "id": "sormayli2025",
+      "doi": "10.1038/s41598-025-10567-0",
+      "url": "https://www.nature.com/articles/s41598-025-10567-0",
+      "locator": "Implementation and comparison, Table6; publisher indexed full text also checked",
+      "supports": "Receiver-detector implementation evaluation considers STM32H743 execution, FLASH and RAM.",
+      "does_not_support": "Importing the authors'20microsecond output time as our RF-on confirmed-delay result, or selecting our quota/memorycaps"
+    },
+    {
+      "id": "acm_sensys_artifacts",
+      "url": "https://sensys.acm.org/2024/art/",
+      "locator": "Guidelines for preparation of research artifacts; Process Overview",
+      "supports": "Report hardware/software requirements and a minimum working example; artifact evaluation relates to paper claims.",
+      "does_not_support": "Calling the current smoke a reproduced scientific result or claiming an awarded ACM badge"
+    }
+  ],
+  "local_observations": [
+    {"file": "docker/image/probe.py", "lines": "23–27,45–48", "finding": "Memory snapshot precedes numeric imports and model loading; not peak detector memory"},
+    {"file": "docker/image/probe.py", "lines": "42–49", "finding": "Five zero-input predictions only; not all66models or fullRunner calibration/state replay"},
+    {"file": "src/gnss_jamming/replay.py", "lines": "80–90,128–130", "finding": "Producer is a descendant and shares detector container limits unless redesigned"}
+  ],
+  "unsupported_parameter_origins": ["CPUquotas0.25/0.5/1 and RAM256/512/1024MiB are authors'finite sensitivity factors, not sourced operational standards", "Three proposed pilot technical repetitions are a pragmatic starting plan, not power-based statistical sufficiency"],
+  "minimal_next_scope": "All66model/fullRunner admission; matched Linuxreference; five predeclared development-informed configs under9profiles+reference with independent producer, logged failure accounting and seeded trial order; full end-to-end grid expansion must be separately declared",
+  "verdict": "Method scientifically defensible as environment-specific resource sensitivity; full constrained timing protocol not yet executable; no implementation change in this review"
+}

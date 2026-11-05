@@ -1,0 +1,18 @@
+{
+  "vm_captured_during_preflight": {
+    "Architecture": "aarch64",
+    "NCPU": 4,
+    "MemTotal": 4124442624,
+    "KernelVersion": "5.15.49-linuxkit-pr",
+    "OperatingSystem": "Docker Desktop",
+    "ServerVersion": "24.0.5",
+    "CgroupVersion": "2"
+  },
+  "host_read_after_completed_run": {
+    "cpu_brand": "Apple M2",
+    "physical_memory_bytes": "8589934592",
+    "hardware_model": "Mac14,7",
+    "macos_version": "26.2"
+  },
+  "host_serial_or_device_identifiers_included": false
+}

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the software version used in your experiments and cite the original data providers separately."
+title: "Resource-aware GNSS jamming detector selection"
+authors:
+  - family-names: "Ferneza"
+    given-names: "Ostap"
+    orcid: "https://orcid.org/0009-0000-1385-7984"
+version: "1.0.0"
+date-released: "2026-11-05"
+type: software
+repository-code: "https://github.com/Ostapfer/gnss-jamming-config-selection"
+abstract: "Finite-library GNSS jamming detector selection with event-level evaluation and Docker resource-sensitivity measurements."
+keywords:
+  - GNSS
+  - jamming detection
+  - resource sensitivity
+  - reproducible research

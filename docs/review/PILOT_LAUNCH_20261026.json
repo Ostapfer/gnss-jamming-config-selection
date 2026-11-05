@@ -1,0 +1,12 @@
+{
+  "status": "STARTED",
+  "started_utc": "2026-10-26T21:24:25.399437+00:00",
+  "run_directory": "docker/artifacts/pilot-v1/run_20261026_r3",
+  "manifest_sha256": "a45cffc6cec4882121b8fdf8db3210ff90e6987699213575668e3edc5256890d",
+  "planned_attempts": 60,
+  "minimum_replay_seconds": 12080.49766,
+  "measurement_gate": "VERIFIED_FOR_MEASUREMENT",
+  "development_only": true,
+  "status_file": "docker/artifacts/pilot-v1/run_20261026_r3/run_status.json",
+  "results_pending": true
+}

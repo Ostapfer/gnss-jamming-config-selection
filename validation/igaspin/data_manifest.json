@@ -1,0 +1,29 @@
+{
+  "records": [
+    {
+      "recording": "jamming",
+      "filename": "COM13___9600_231207_121012.ubx",
+      "sha256": "09639f20c8b94a084f85b433e4c1ccac348dae89022002e006dada7768b2887b",
+      "nav_epochs": 362,
+      "provider_reference_utc": "2023-12-07T12:08:21Z",
+      "physical_reference_verified": false
+    },
+    {
+      "recording": "expected_clean",
+      "filename": "COM13___9600_231129_141846.ubx",
+      "sha256": "5d6daf447333589601cb1bb1d78615eb7a85fe380c8727c411ac1f44788ca509",
+      "nav_epochs": 378,
+      "provider_reference_utc": null,
+      "clean_conditions_independently_verified": false
+    }
+  ],
+  "receiver": "u-blox ZED-F9P",
+  "firmware": "HPG1.13",
+  "protocol": "27.12",
+  "rf_positions": [
+    "rf_ordinal_0",
+    "rf_ordinal_1"
+  ],
+  "rf_band_identity_verified": false,
+  "raw_redistribution_granted_by_repository": false
+}

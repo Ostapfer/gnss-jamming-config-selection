@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!requirements-lock.txt
+!probe.py
+!src/
+!src/**
+**/__pycache__

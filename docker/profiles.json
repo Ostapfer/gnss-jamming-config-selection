@@ -1,0 +1,16 @@
+{
+  "version": "preparation-v1",
+  "purpose": "Prospective CPU and total-container RAM limits, not equivalents of SBC hardware",
+  "cpu_period_us": 100000,
+  "cpu_quotas": [1.0, 0.5, 0.25],
+  "memory_mib": [1024, 512, 256],
+  "swap": "disabled: memory-swap equals memory",
+  "threads_per_math_library": 1,
+  "reference": {"id": "guarded_reference", "cpus": null, "memory_mib": 1536},
+  "smoke": {"id": "readiness_only", "cpus": 1.0, "memory_mib": 512},
+  "measurement_policy": "No full experiments in preparation. Freeze input hashes, image digest, actual cgroup values, selected candidates, order and repetitions before measured runs.",
+  "replay_policy": "Independent producer outside detector CPU/memory cgroup. Existing replay spawns producer inside detector process tree: do not use unchanged for constrained timing claims.",
+  "failure_policy": "Record startup failure, OOM, exit code, missing data and deadline miss. Do not silently remove failed configurations.",
+  "environment_policy": "Use Linux ARM64 reference in same Docker VM; prior native macOS timings are not its unconstrained baseline. Do not stop unrelated containers automatically.",
+  "status": "Prepared profiles, final measurement protocol pending readiness and workload review"
+}

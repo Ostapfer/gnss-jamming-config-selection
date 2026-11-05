@@ -1,0 +1,787 @@
+{
+  "scope": "descriptive rescreening at X*=1,T3/T10,Y0, fixed profile, same19 complete matched-valid groups in both runs; DT/cpu1 excluded from both; no resource budgets or validation",
+  "vectors": [
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 1.991608244999668,
+      "P95max_ms": 8.962883798449182,
+      "S_bytes": 1856,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 1.993959495997558,
+      "P95max_ms": 7.897429148397348,
+      "S_bytes": 1856,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 1.9873935380016405,
+      "P95max_ms": 7.959391597250939,
+      "S_bytes": 1856,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 2.984353704999819,
+      "P95max_ms": 15.119696048350306,
+      "S_bytes": 12063,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 2.9863021630005164,
+      "P95max_ms": 20.132097700115988,
+      "S_bytes": 12063,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "d_exec_s": 2.990056163001725,
+      "P95max_ms": 15.145383548406244,
+      "S_bytes": 12063,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 2.992193621000922,
+      "P95max_ms": 24.187233999873524,
+      "S_bytes": 12063,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 2.0803376200016714,
+      "P95max_ms": 102.5756357508726,
+      "S_bytes": 241855,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 2.0012431629999696,
+      "P95max_ms": 35.17344789961498,
+      "S_bytes": 241855,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "d_exec_s": 2.01666066200022,
+      "P95max_ms": 34.69109940051566,
+      "S_bytes": 241855,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 2.004314953999426,
+      "P95max_ms": 39.549697800248374,
+      "S_bytes": 241855,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 7.986315791000095,
+      "P95max_ms": 2.636491599696455,
+      "S_bytes": 79,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 7.995885791002081,
+      "P95max_ms": 4.249631799757469,
+      "S_bytes": 79,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "d_exec_s": 7.9901198309996175,
+      "P95max_ms": 2.9773311007374996,
+      "S_bytes": 79,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 7.987964292998811,
+      "P95max_ms": 7.137587501711067,
+      "S_bytes": 79,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 2.983798329001445,
+      "P95max_ms": 21.78929180008706,
+      "S_bytes": 2867,
+      "Y0_pass": false,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 2.9833204130006266,
+      "P95max_ms": 11.992800000734853,
+      "S_bytes": 2867,
+      "Y0_pass": false,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu1_ram512",
+      "d_exec_s": 2.986802539002099,
+      "P95max_ms": 15.345816401168118,
+      "S_bytes": 2867,
+      "Y0_pass": false,
+      "readiness_all": true
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 2.9847430379992943,
+      "P95max_ms": 20.453447249201417,
+      "S_bytes": 2867,
+      "Y0_pass": false,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 1.992883328999767,
+      "P95max_ms": 17.820847299867637,
+      "S_bytes": 1856,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 1.9907872040000143,
+      "P95max_ms": 20.004362199688323,
+      "S_bytes": 1856,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 1.9955139959999428,
+      "P95max_ms": 10.188804350491408,
+      "S_bytes": 1856,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 2.990476536000358,
+      "P95max_ms": 100.34561060008393,
+      "S_bytes": 12063,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 2.984582829999624,
+      "P95max_ms": 27.119241999889667,
+      "S_bytes": 12063,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "d_exec_s": 2.985104873001262,
+      "P95max_ms": 13.248424999528648,
+      "S_bytes": 12063,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 2.988979536999693,
+      "P95max_ms": 16.770648199781107,
+      "S_bytes": 12063,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 2.0587127040013797,
+      "P95max_ms": 192.84563739996653,
+      "S_bytes": 241855,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 2.014027203000012,
+      "P95max_ms": 78.11715394992663,
+      "S_bytes": 241855,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "d_exec_s": 2.0218819539983883,
+      "P95max_ms": 39.21121669991404,
+      "S_bytes": 241855,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 2.0129546229997572,
+      "P95max_ms": 54.39299170011485,
+      "S_bytes": 241855,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 7.994600832000003,
+      "P95max_ms": 6.184066399873695,
+      "S_bytes": 79,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 7.987560539999038,
+      "P95max_ms": 2.219879200492866,
+      "S_bytes": 79,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "d_exec_s": 8.014782749000176,
+      "P95max_ms": 5.637354200030126,
+      "S_bytes": 79,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 7.990880206999179,
+      "P95max_ms": 2.6557874997706663,
+      "S_bytes": 79,
+      "Y0_pass": true,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu025_ram512",
+      "d_exec_s": 2.9838477879999914,
+      "P95max_ms": 41.35952499980226,
+      "S_bytes": 2867,
+      "Y0_pass": false,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu05_ram512",
+      "d_exec_s": 2.9893072469992035,
+      "P95max_ms": 11.841533700317077,
+      "S_bytes": 2867,
+      "Y0_pass": false,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu1_ram512",
+      "d_exec_s": 2.983830662999651,
+      "P95max_ms": 13.587629199355424,
+      "S_bytes": 2867,
+      "Y0_pass": false,
+      "readiness_all": true
+    },
+    {
+      "run": "night_20261103_r1",
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "guarded_reference",
+      "d_exec_s": 2.982657706999987,
+      "P95max_ms": 40.420478850023635,
+      "S_bytes": 2867,
+      "Y0_pass": false,
+      "readiness_all": true
+    }
+  ],
+  "frontiers": [
+    {
+      "run": "repeat_20261027_r1",
+      "profile_id": "cpu025_ram512",
+      "T_s": 3,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "profile_id": "cpu025_ram512",
+      "T_s": 10,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "profile_id": "cpu05_ram512",
+      "T_s": 3,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "profile_id": "cpu05_ram512",
+      "T_s": 10,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "profile_id": "cpu1_ram512",
+      "T_s": 3,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": [
+        "DT_f3_p2_d0.5_c2"
+      ]
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "profile_id": "cpu1_ram512",
+      "T_s": 10,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": [
+        "DT_f3_p2_d0.5_c2"
+      ]
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "profile_id": "guarded_reference",
+      "T_s": 3,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "profile_id": "guarded_reference",
+      "T_s": 10,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile_id": "cpu025_ram512",
+      "T_s": 3,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile_id": "cpu025_ram512",
+      "T_s": 10,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile_id": "cpu05_ram512",
+      "T_s": 3,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile_id": "cpu05_ram512",
+      "T_s": 10,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile_id": "cpu1_ram512",
+      "T_s": 3,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": [
+        "DT_f3_p2_d0.5_c2"
+      ]
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile_id": "cpu1_ram512",
+      "T_s": 10,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": [
+        "DT_f3_p2_d0.5_c2"
+      ]
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile_id": "guarded_reference",
+      "T_s": 3,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile_id": "guarded_reference",
+      "T_s": 10,
+      "Y_events_per_hour": 0,
+      "eligible_configs": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "descriptive_frontier": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "excluded_from_both_runs_for_matched_coverage": []
+    }
+  ],
+  "changes": [
+    {
+      "profile": "cpu025_ram512",
+      "T_s": 3,
+      "historical": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "night": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "changed": false
+    },
+    {
+      "profile": "cpu025_ram512",
+      "T_s": 10,
+      "historical": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "night": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "changed": false
+    },
+    {
+      "profile": "cpu05_ram512",
+      "T_s": 3,
+      "historical": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "night": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "changed": false
+    },
+    {
+      "profile": "cpu05_ram512",
+      "T_s": 10,
+      "historical": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "night": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "changed": false
+    },
+    {
+      "profile": "cpu1_ram512",
+      "T_s": 3,
+      "historical": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "night": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "changed": false
+    },
+    {
+      "profile": "cpu1_ram512",
+      "T_s": 10,
+      "historical": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "night": [
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "changed": false
+    },
+    {
+      "profile": "guarded_reference",
+      "T_s": 3,
+      "historical": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "night": [
+        "DT_f3_p2_d0.5_c2"
+      ],
+      "changed": false
+    },
+    {
+      "profile": "guarded_reference",
+      "T_s": 10,
+      "historical": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "night": [
+        "DT_f3_p2_d0.5_c2",
+        "RULE_noise_t2_d0.5_c2"
+      ],
+      "changed": false
+    }
+  ],
+  "RF_ranges": [
+    {
+      "run": "repeat_20261027_r1",
+      "profile": "cpu1_ram512",
+      "whole_record_p95_min_ms": 32.44749374935054,
+      "whole_record_p95_max_ms": 34.31194115055405,
+      "P95max_ms": 34.69109940051566,
+      "d_exec_s": 2.01666066200022
+    },
+    {
+      "run": "repeat_20261027_r1",
+      "profile": "cpu025_ram512",
+      "whole_record_p95_min_ms": 96.04054554729375,
+      "whole_record_p95_max_ms": 101.58387685114575,
+      "P95max_ms": 102.5756357508726,
+      "d_exec_s": 2.0803376200016714
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile": "cpu1_ram512",
+      "whole_record_p95_min_ms": 33.19669834982051,
+      "whole_record_p95_max_ms": 34.042820500053494,
+      "P95max_ms": 39.21121669991404,
+      "d_exec_s": 2.0218819539983883
+    },
+    {
+      "run": "night_20261103_r1",
+      "profile": "cpu025_ram512",
+      "whole_record_p95_min_ms": 75.21520855007111,
+      "whole_record_p95_max_ms": 186.61073310000805,
+      "P95max_ms": 192.84563739996653,
+      "d_exec_s": 2.0587127040013797
+    }
+  ]
+}

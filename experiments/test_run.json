@@ -1,0 +1,20 @@
+{
+  "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+  "tests_run": 28,
+  "failures": 0,
+  "errors": 0,
+  "source_hashes": {
+    "src/gnss_jamming/benchmark.py": "3d77ad9c9089167306534f7e634bff6680a0654a477427a861634281c35e013f",
+    "src/gnss_jamming/__init__.py": "4c5251cd5de1a5dfd82c5ada67dcece63598cca486c91ad7ddac72fe7da8cf13",
+    "src/gnss_jamming/core.py": "a724a95d310710508f3d2fb8600d7a012acce9228497b0432d85fe99f0b8147d",
+    "src/gnss_jamming/summarize.py": "27a6d7e3601b3def44a57e4a9ee57dcc389349f196c26ec3d7ab64fc450f66ef",
+    "src/gnss_jamming/replay.py": "d263accdc2151393638664cbc70b836f5c196dcd2585aa120a1cd60b7e973f52",
+    "src/gnss_jamming/train.py": "25c22361c185dc6ad8ea9c9dff9d2bd2bbb9176ef6869357a42a87ff131e9591",
+    "src/gnss_jamming/prepare.py": "f7bcd95d9789621e557d26afdd53e857974de045e019e1eb2dcffef3e7c64630",
+    "tests/test_protocol.py": "ae0210d997f90c43c20f234855b8d8eb6505db638624ddebedaaeeec700955a9",
+    "tests/test_replay_v2.py": "6aa17ed2b5c0b93de44eb9d917f18b11bdde8ec0f5c7edb62c579dea5c5328c3",
+    "tests/test_evaluation.py": "879446b743ca2355f49d91a11edd3b8770456726d5ad4dd5347bfa4283d2aa9d",
+    "tests/test_summary.py": "a22f70f35c7942bdbaf6ccf6c3adc01e3d15c77309362c04cc5325728790599f",
+    "tests/test_resource_v2.py": "7f059f0f361f16abd2ad19f1cc3bfa41976113c11105967fa4ccf46bff4d9742"
+  }
+}

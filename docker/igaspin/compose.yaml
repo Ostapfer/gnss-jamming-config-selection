@@ -1,0 +1,46 @@
+name: nulp-pilot-v1
+x-common: &common
+  entrypoint: [python, /scope/runtime_bridge.py]
+  image: ${PILOT_IMAGE:-nulp-gnss:pilot-v1}
+  platform: linux/arm64
+  network_mode: none
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  pids_limit: 128
+  tmpfs: ["/tmp:rw,nosuid,size=64m"]
+  environment:
+    OMP_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    NUMEXPR_NUM_THREADS: '1'
+    BLIS_NUM_THREADS: '1'
+services:
+  driver:
+    <<: *common
+    cgroup: host
+    labels: {nulp.role: pilot-source-and-external-collector}
+    mem_limit: 512m
+    memswap_limit: 512m
+    volumes:
+      - ${IGASPIN_SCOPE_ROOT:?scope root required}:/scope:ro
+      - ${GNSS_INPUT_ROOT:?input root required}:/inputs:ro
+      - ${PILOT_TRANSPORT_ROOT:?transport root required}:/transport:ro
+      - pilot_ipc:/ipc
+      - ${PILOT_OUTPUT_ROOT:?output root required}:/outputs
+    command: [driver, --spec, /transport/spec.json, --input-root, /inputs, --output, /outputs]
+  detector:
+    <<: *common
+    labels: {nulp.role: pilot-detector-budget}
+    cpu_period: 100000
+    cpu_quota: ${PILOT_CPU_QUOTA:--1}
+    mem_limit: ${PILOT_MEMORY_MIB:-512}m
+    memswap_limit: ${PILOT_MEMORY_MIB:-512}m
+    volumes:
+      - ${IGASPIN_SCOPE_ROOT:?scope root required}:/scope:ro
+      - ${GNSS_INPUT_ROOT:?input root required}:/inputs:ro
+      - ${PILOT_TRANSPORT_ROOT:?transport root required}:/transport:ro
+      - pilot_ipc:/ipc
+    command: [detector, --spec, /transport/spec.json, --input-root, /inputs]
+volumes:
+  pilot_ipc:

@@ -1,0 +1,21 @@
+{
+  "candidate_count": 66,
+  "detector_config_count": 378,
+  "information_clock_config_count": 378,
+  "realtime_measured_config_count": 2,
+  "measured_primary_configurations": [
+    "RULE_noise_t2_d0.5_c2",
+    "RULE_noise_eph_t2_d0.5_c2"
+  ],
+  "primary_causal_empirical_passes": 2,
+  "all_evidence": "INSUFFICIENT EVIDENCE",
+  "independent_jamming_sessions": 0,
+  "eligible_jamming_sessions": 1,
+  "nonjamming_exposure_s": {
+    "benign": 445.046782,
+    "spoofing": 18.983951999999988
+  },
+  "development_jamming_sessions": 1,
+  "development_spoofing_sessions": 1,
+  "supplementary_benign_sessions": 1
+}

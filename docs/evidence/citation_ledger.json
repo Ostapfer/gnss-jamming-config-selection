@@ -1,0 +1,282 @@
+{
+  "checked_on": "2026-10-26",
+  "role": "Proof of Concept / Evidence Validation",
+  "scope": "Published precedents and alternatives; no runtime execution",
+  "verdict": "METHOD_PRECEDENT_FOUND_TARGET_HARDWARE_EQUIVALENCE_UNSUPPORTED",
+  "evidence_level_definition": {
+    "DIRECT": "Direct precedent for the named method, not validation of our target or implementation",
+    "ANALOGY": "Related evaluation route or alternative, not exact implementation precedent",
+    "DOCS_ONLY": "Mechanism specification only",
+    "UNVERIFIED": "Discovery lead excluded from affirmative claims"
+  },
+  "sources": [
+    {
+      "id": "CHEN2026",
+      "bibkey": "Chen2026MissionPreserving",
+      "title": "Mission-preserving protocol defense: An in-situ MAVLink honeypot with benchmark-calibrated thresholds and constant-space logging",
+      "authors": [
+        "Zigang Chen",
+        "Zheng Cao",
+        "Fulin Yu",
+        "Xiaochen Yuan",
+        "Haihua Zhu"
+      ],
+      "year": 2026,
+      "doi": "10.1016/j.comcom.2026.108613",
+      "primary_url": "https://research.mpu.edu.mo/zh/publications/mission-preserving-protocol-defense-an-in-situ-mavlink-honeypot-w/",
+      "fulltext_url": "https://www.sciencedirect.com/science/article/abs/pii/S0140366426002033",
+      "venue": "Computer Communications",
+      "volume": "257",
+      "article_number": "108613",
+      "publication_status": "Published peer-reviewed journal article; institutional record dated2026-08-01",
+      "verification_scope": "Institutional metadata/abstract plus publisher-indexed sections4.1,4.3.3,4.3.4; direct full-page403, no fullPDF obtained",
+      "evidence_level": "DIRECT",
+      "claim_supported": "Embedded-like UAVsecurity container CPU/RAM caps and bounded logging have an abstract-verified precedent.",
+      "target_hardware": "Verified core: embedded-like container. Pi4 detail is author-reported INDEXED_TEXT_ONLY, not used for gate.",
+      "calibration_status": "No matched desktop-to-target performance calibration established in verified core.",
+      "claim_not_supported": "Our Mac quota equals UAVCPU; their memory or thresholds apply to our detector.",
+      "locator": "Experimental environment4.1; bounded-space logging4.3.3; hardware-adjacent deployment4.3.4",
+      "additional_details": {
+        "confidence": "INDEXED_TEXT_ONLY",
+        "host_generated_traffic_locator": "Publisher-indexed section4.1; directfullpage403",
+        "pi4_validation_locator": "Publisher-indexed section4.3.4; directfullpage403",
+        "evidence_note": "verification_notes.md",
+        "not_gate_evidence": true
+      }
+    },
+    {
+      "id": "FOGIFY2020",
+      "bibkey": "Symeonides2020Fogify",
+      "title": "Fogify: A Fog Computing Emulation Framework",
+      "authors": [
+        "Moysis Symeonides",
+        "Zacharias Georgiou",
+        "Demetris Trihinas",
+        "George Pallis",
+        "Marios D. Dikaiakos"
+      ],
+      "year": 2020,
+      "doi": "10.1109/SEC50012.2020.00011",
+      "primary_url": "https://www.cs.ucy.ac.cy/mdd/docs/2020-SEC-Fogify.pdf",
+      "fulltext_url": "https://classpages.cselabs.umn.edu/Fall-2021/csci8980-ec/papers/Fogify.pdf",
+      "metadata_url": "https://cordis.europa.eu/project/id/871403/results",
+      "venue": "2020 IEEE/ACM Symposium on Edge Computing (SEC)",
+      "pages": "42--54",
+      "publication_status": "Published conference paper",
+      "verification_scope": "Original paper read via university-hosted copy; authorPDF indexed; DOI verified in EC project results",
+      "evidence_level": "DIRECT",
+      "claim_supported": "Docker/cgroups CPU/RAM shaping and Compose-based edge emulation are established.",
+      "target_hardware": "Server-emulated edge nodes; RaspberryPi3 in validation deployments",
+      "calibration_status": "Specific resource/application realism experiments against real deployments; limited workload-specific validation.",
+      "claim_not_supported": "Frequency-ratio mapping or their accuracy transfers to our ARM64Mac/GNSSpipeline.",
+      "locator": "V.B Computational Resources Management; VI.B Emulation Accuracy"
+    },
+    {
+      "id": "IOTIER2021",
+      "bibkey": "Nikolaidis2021IOTier",
+      "title": "IOTier: A Virtual Testbed to evaluate systems for IoT environments",
+      "authors": [
+        "Fotis Nikolaidis",
+        "Manolis Marazakis",
+        "Angelos Bilas"
+      ],
+      "year": 2021,
+      "doi": "10.1109/CCGrid51090.2021.00081",
+      "primary_url": "https://www.ptidej.net/downloads/replications/tse23b/Primary%20Study/Primary%20Studies/P36.%20IOTier_A_Virtual_Testbed_to_evaluate_systems_for_IoT_environments.pdf",
+      "metadata_url": "https://publications.ics.forth.gr/publication_details.php?lab=CARV&lang=en&pub_ctg=2",
+      "venue": "2021 IEEE/ACM 21st International Symposium on Cluster, Cloud and Internet Computing (CCGrid)",
+      "pages": "676--683",
+      "publication_status": "Published conference/workshop paper",
+      "verification_scope": "Original published PDF including DOI and authors; author institution publication listing",
+      "evidence_level": "DIRECT",
+      "claim_supported": "Container resource shaping, separate controller/runtime and validation microbenchmarks precede our design.",
+      "target_hardware": "Laboratory cluster with emulated IoTdevice profiles",
+      "calibration_status": "Heuristic CPUprofile-to-quota mapping and microbenchmarks; not our target-specific calibration.",
+      "claim_not_supported": "Ordinary quota guarantees reservedCPU or models all architecture effects.",
+      "locator": "II.A Overview; II.B Device Emulation; CPU and Memory validation"
+    },
+    {
+      "id": "TRIHINAS2022",
+      "bibkey": "Trihinas2022EnergyTesting",
+      "title": "Towards Energy Consumption and Carbon Footprint Testing for AI-driven IoT Services",
+      "authors": [
+        "Demetris Trihinas",
+        "Lauritz Thamsen",
+        "Jossekin Beilharz",
+        "Moysis Symeonides"
+      ],
+      "year": 2022,
+      "doi": "10.1109/IC2E55432.2022.00011",
+      "primary_url": "https://eprints.gla.ac.uk/276781/",
+      "fulltext_url": "https://lauritzthamsen.org/assets/texts/TrihinasThamsenBeilharzSymeonides_2022_TowardsEnergyConsumptionAndCarbonFootprintTestingForAIDrivenIoTServices.pdf",
+      "venue": "2022 IEEE International Conference on Cloud Engineering (IC2E)",
+      "pages": "29--35",
+      "publication_status": "Published refereed conference paper",
+      "verification_scope": "Institutional metadata/accepted paper and author-hosted text",
+      "evidence_level": "DIRECT",
+      "claim_supported": "Inference under CPUcaps can be studied on both server and actual edge hardware.",
+      "target_hardware": "Reference server and RaspberryPi4ModelB",
+      "calibration_status": "Paired platform experiments; hardware effects make simple universal mapping unsuitable.",
+      "claim_not_supported": "Our CPUquota determines target energy, thermal behavior or flight autonomy.",
+      "locator": "SectionIII.E resource heterogeneity; TableII"
+    },
+    {
+      "id": "KNOCHE2018",
+      "bibkey": "Knoche2018ReplicablePi",
+      "title": "Using the Raspberry Pi and Docker for Replicable Performance Experiments: Experience Paper",
+      "authors": [
+        "Holger Knoche",
+        "Holger Eichelberger"
+      ],
+      "year": 2018,
+      "doi": "10.1145/3184407.3184431",
+      "primary_url": "https://hilpub.uni-hildesheim.de/entities/publication/32402a1f-94d8-4dd8-a422-8875f4681c59",
+      "venue": "Proceedings of the2018 ACM/SPEC International Conference on Performance Engineering",
+      "pages": "305--316",
+      "publication_status": "Published conference paper",
+      "verification_scope": "Author institution bibliographic record and abstract; fullpaper not audited",
+      "evidence_level": "ANALOGY",
+      "claim_supported": "Real standardized hardware plus Docker can support replication, with macrobenchmark/peripheral limitations.",
+      "target_hardware": "Physical RaspberryPi, native versus Docker",
+      "calibration_status": "Actual-device experiments, not desktop targetemulation.",
+      "claim_not_supported": "Software environment replication removes hardware dependence.",
+      "locator": "Institutional abstract and publication metadata"
+    },
+    {
+      "id": "GUPTA2025",
+      "bibkey": "Gupta2025ContainersEdge",
+      "title": "Characterizing Container Performance in Edge Computing",
+      "authors": [
+        "Ragini Gupta",
+        "Claudiu Danilov",
+        "Josh Eckhardt",
+        "Keyshla Bernard",
+        "Klara Nahrstedt"
+      ],
+      "year": 2025,
+      "doi": "10.1145/3744969.3748438",
+      "primary_url": "https://experts.illinois.edu/en/publications/characterizing-container-performance-in-edge-computing/",
+      "venue": "SIGCOMM2025 Posters and Demos",
+      "pages": "94--96",
+      "publication_status": "Published short conference poster/demo contribution,3pages",
+      "verification_scope": "Author institution metadata and abstract only; fullPDF not obtained",
+      "evidence_level": "ANALOGY",
+      "claim_supported": "Container overhead should be measured on actual edge hardware for the relevant workload.",
+      "target_hardware": "Physical RaspberryPi nodes, microbenchmarks and AI/sensor workloads",
+      "calibration_status": "Real-device container measurements; desktop-to-Pi mapping not evaluated in inspected abstract.",
+      "claim_not_supported": "Negligible overhead for all workloads or our end-to-end delay.",
+      "locator": "Institutional abstract, DOI and publicationseries"
+    },
+    {
+      "id": "GEM52011",
+      "bibkey": "Binkert2011Gem5",
+      "title": "The gem5 Simulator",
+      "authors": [
+        "Nathan Binkert",
+        "Bradford Beckmann",
+        "Gabriel Black",
+        "Steven K. Reinhardt",
+        "Ali Saidi",
+        "Arkaprava Basu",
+        "Joel Hestness",
+        "Derek R. Hower",
+        "Tushar Krishna",
+        "Somayeh Sardashti",
+        "Rathijit Sen",
+        "Korey Sewell",
+        "Muhammad Shoaib",
+        "Nilay Vaish",
+        "Mark D. Hill",
+        "David A. Wood"
+      ],
+      "year": 2011,
+      "doi": "10.1145/2024716.2024718",
+      "primary_url": "https://people.csail.mit.edu/tushar/papers/pdfs/gem5_can2011.pdf",
+      "metadata_url": "https://old.gem5.org/Publications.html",
+      "venue": "ACM SIGARCH Computer Architecture News",
+      "volume": "39",
+      "number": "2",
+      "pages": "1--7",
+      "publication_status": "Published ACMtechnical article; independent reviewmodel not checked",
+      "verification_scope": "Author-hosted fullpaper and official project publication record",
+      "evidence_level": "ANALOGY",
+      "claim_supported": "CPU/ISA/cache/memory architectural simulation is a distinct alternative for target-specific modeling.",
+      "target_hardware": "Configurable ARM and otherISA CPU/system models",
+      "calibration_status": "Model detail/accuracy varies; our targetconfiguration and validation are absent.",
+      "claim_not_supported": "An arbitrary gem5 model provides correct timings for an unspecified UAVboard.",
+      "locator": "Section2.1 Flexibility and speed-versus-accuracy model spectrum"
+    },
+    {
+      "id": "AIRSIM2018",
+      "bibkey": "Shah2018AirSim",
+      "title": "AirSim: High-Fidelity Visual and Physical Simulation for Autonomous Vehicles",
+      "authors": [
+        "Shital Shah",
+        "Debadeepta Dey",
+        "Chris Lovett",
+        "Ashish Kapoor"
+      ],
+      "year": 2018,
+      "doi": "10.1007/978-3-319-67361-5_40",
+      "primary_url": "https://link.springer.com/chapter/10.1007/978-3-319-67361-5_40",
+      "fulltext_url": "https://arxiv.org/abs/1705.05065",
+      "venue": "Field and Service Robotics",
+      "pages": "621--635",
+      "publication_status": "Conference paper FSR2017; publisher canonical citation year2018, firstonline2017-11-03",
+      "verification_scope": "Publisher metadata/abstract and author arXiv accepted-paper record",
+      "evidence_level": "ANALOGY",
+      "claim_supported": "Physics/visual UAVsimulation and hardware-in-the-loop are separate functional-integration approaches.",
+      "target_hardware": "Autonomous quadrotor/software components and HITL interfaces",
+      "calibration_status": "Reported comparison with realflight softwarecomponents; not our processor timing calibration.",
+      "claim_not_supported": "Flight/SITLsimulation reproduces onboardCPU latency or RAM behavior.",
+      "locator": "Publisher abstract; acceptedFSR2017 authorrecord"
+    }
+  ],
+  "article_claim_map": [
+    {
+      "claim": "Container CPU/RAM shaping in embedded-like UAVsecurity",
+      "sources": [
+        "CHEN2026"
+      ],
+      "status": "SUPPORTED_PRECEDENT_ONLY"
+    },
+    {
+      "claim": "General edge/fog resource emulation",
+      "sources": [
+        "FOGIFY2020",
+        "IOTIER2021"
+      ],
+      "status": "SUPPORTED_PRECEDENT_ONLY"
+    },
+    {
+      "claim": "Bounded onboard-security logging",
+      "sources": [
+        "CHEN2026"
+      ],
+      "status": "SUPPORTED_DESIGN_PRECEDENT"
+    },
+    {
+      "claim": "Target hardware and workload-specific measurements remain necessary",
+      "sources": [
+        "TRIHINAS2022",
+        "KNOCHE2018",
+        "GUPTA2025"
+      ],
+      "status": "SUPPORTED_EVALUATION_ROUTE"
+    },
+    {
+      "claim": "Architectural simulation differs from flightfunctional simulation",
+      "sources": [
+        "GEM52011",
+        "AIRSIM2018"
+      ],
+      "status": "SUPPORTED_DISTINCTION"
+    },
+    {
+      "claim": "Our Mac CPUfraction equals a specific UAVprocessor",
+      "sources": [],
+      "status": "UNSUPPORTED_DO_NOT_CLAIM"
+    }
+  ],
+  "local_implication": "Keep declared LinuxARM64 resource sensitivity study; processor equivalence needs target-specific calibration or hardware evaluation. Do not import other papers numerical thresholds/memory/timing as ours."
+}

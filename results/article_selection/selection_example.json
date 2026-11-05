@@ -1,0 +1,302 @@
+{
+  "status": "EXACT_ARITHMETIC_ON_EXISTING_DEVELOPMENT_RESULTS",
+  "platform": {
+    "vm_captured_during_preflight": {
+      "Architecture": "aarch64",
+      "NCPU": 4,
+      "MemTotal": 4124442624,
+      "KernelVersion": "5.15.49-linuxkit-pr",
+      "OperatingSystem": "Docker Desktop",
+      "ServerVersion": "24.0.5",
+      "CgroupVersion": "2"
+    },
+    "host_read_after_completed_run": {
+      "cpu_brand": "Apple M2",
+      "physical_memory_bytes": "8589934592",
+      "hardware_model": "Mac14,7",
+      "macos_version": "26.2"
+    },
+    "host_serial_or_device_identifiers_included": false
+  },
+  "fixed_profile": {
+    "id": "cpu1_ram512",
+    "cpu_quota_us": 100000,
+    "cpu_period_us": 100000,
+    "detector_memory_limit_mib": 512,
+    "driver_memory_limit_mib": 512,
+    "memory_swap_max_bytes": 0
+  },
+  "requirements": {
+    "X": 1,
+    "Y_benign_events_per_hour": 0,
+    "Y_spoofing_events_per_hour": 0
+  },
+  "minimize_objectives": [
+    "confirmed_delay_s",
+    "processing_phase_p95_max_ms",
+    "model_bytes"
+  ],
+  "budget_filter": "None in historical example; enforced profile is fixed",
+  "dominance": "all objective coordinates <= and at least one strictly <, no rounding before comparison",
+  "scenarios": [
+    {
+      "T_s": 3,
+      "candidate_screening": [
+        {
+          "config_id": "RULE_noise_t2_d0.5_c2",
+          "timely_fraction": 0,
+          "empirical_functional_pass": false,
+          "exclusion_reasons": [
+            "timely_fraction_below_X"
+          ],
+          "objective_vector": {
+            "confirmed_delay_s": 7.9901198309996175,
+            "processing_phase_p95_max_ms": 2.9773311007374996,
+            "model_bytes": 79
+          }
+        },
+        {
+          "config_id": "DT_f3_p2_d0.5_c2",
+          "timely_fraction": 1,
+          "empirical_functional_pass": true,
+          "exclusion_reasons": [],
+          "objective_vector": {
+            "confirmed_delay_s": 1.987471914002242,
+            "processing_phase_p95_max_ms": 21.999183400475886,
+            "model_bytes": 1856
+          }
+        },
+        {
+          "config_id": "KNN_f3_p1_d0.5_c2",
+          "timely_fraction": 1,
+          "empirical_functional_pass": true,
+          "exclusion_reasons": [],
+          "objective_vector": {
+            "confirmed_delay_s": 2.990056163001725,
+            "processing_phase_p95_max_ms": 15.145383548406244,
+            "model_bytes": 12063
+          }
+        },
+        {
+          "config_id": "SVM_f3_p2_d0_c2",
+          "timely_fraction": 1,
+          "empirical_functional_pass": false,
+          "exclusion_reasons": [
+            "spoofing_FAR_above_Y"
+          ],
+          "objective_vector": {
+            "confirmed_delay_s": 2.986802539002099,
+            "processing_phase_p95_max_ms": 15.345816401168118,
+            "model_bytes": 2867
+          }
+        },
+        {
+          "config_id": "RF_f3_p3_d0.5_c2",
+          "timely_fraction": 1,
+          "empirical_functional_pass": true,
+          "exclusion_reasons": [],
+          "objective_vector": {
+            "confirmed_delay_s": 2.01666066200022,
+            "processing_phase_p95_max_ms": 34.69109940051566,
+            "model_bytes": 241855
+          }
+        }
+      ],
+      "functional_feasible_ids": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "pareto_ids": [
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2"
+      ],
+      "pareto_vectors": [
+        {
+          "config_id": "DT_f3_p2_d0.5_c2",
+          "confirmed_delay_s": 1.987471914002242,
+          "processing_phase_p95_max_ms": 21.999183400475886,
+          "model_bytes": 1856
+        },
+        {
+          "config_id": "KNN_f3_p1_d0.5_c2",
+          "confirmed_delay_s": 2.990056163001725,
+          "processing_phase_p95_max_ms": 15.145383548406244,
+          "model_bytes": 12063
+        }
+      ],
+      "posthoc_illustrative_budget": {
+        "status": "POST_HOC_ILLUSTRATIVE_NOT_HISTORICAL_NOT_APPLICATION_STANDARD",
+        "processing_phase_p95_max_ms_le": 50,
+        "model_bytes_le": 10240,
+        "resource_excluded_after_functional": [
+          {
+            "config_id": "KNN_f3_p1_d0.5_c2",
+            "exceeds_p95_cap": false,
+            "exceeds_model_size_cap": true
+          },
+          {
+            "config_id": "RF_f3_p3_d0.5_c2",
+            "exceeds_p95_cap": false,
+            "exceeds_model_size_cap": true
+          }
+        ],
+        "feasible_ids": [
+          "DT_f3_p2_d0.5_c2"
+        ],
+        "pareto_ids": [
+          "DT_f3_p2_d0.5_c2"
+        ],
+        "pareto_vectors": [
+          {
+            "config_id": "DT_f3_p2_d0.5_c2",
+            "confirmed_delay_s": 1.987471914002242,
+            "processing_phase_p95_max_ms": 21.999183400475886,
+            "model_bytes": 1856
+          }
+        ]
+      }
+    },
+    {
+      "T_s": 10,
+      "candidate_screening": [
+        {
+          "config_id": "RULE_noise_t2_d0.5_c2",
+          "timely_fraction": 1,
+          "empirical_functional_pass": true,
+          "exclusion_reasons": [],
+          "objective_vector": {
+            "confirmed_delay_s": 7.9901198309996175,
+            "processing_phase_p95_max_ms": 2.9773311007374996,
+            "model_bytes": 79
+          }
+        },
+        {
+          "config_id": "DT_f3_p2_d0.5_c2",
+          "timely_fraction": 1,
+          "empirical_functional_pass": true,
+          "exclusion_reasons": [],
+          "objective_vector": {
+            "confirmed_delay_s": 1.987471914002242,
+            "processing_phase_p95_max_ms": 21.999183400475886,
+            "model_bytes": 1856
+          }
+        },
+        {
+          "config_id": "KNN_f3_p1_d0.5_c2",
+          "timely_fraction": 1,
+          "empirical_functional_pass": true,
+          "exclusion_reasons": [],
+          "objective_vector": {
+            "confirmed_delay_s": 2.990056163001725,
+            "processing_phase_p95_max_ms": 15.145383548406244,
+            "model_bytes": 12063
+          }
+        },
+        {
+          "config_id": "SVM_f3_p2_d0_c2",
+          "timely_fraction": 1,
+          "empirical_functional_pass": false,
+          "exclusion_reasons": [
+            "spoofing_FAR_above_Y"
+          ],
+          "objective_vector": {
+            "confirmed_delay_s": 2.986802539002099,
+            "processing_phase_p95_max_ms": 15.345816401168118,
+            "model_bytes": 2867
+          }
+        },
+        {
+          "config_id": "RF_f3_p3_d0.5_c2",
+          "timely_fraction": 1,
+          "empirical_functional_pass": true,
+          "exclusion_reasons": [],
+          "objective_vector": {
+            "confirmed_delay_s": 2.01666066200022,
+            "processing_phase_p95_max_ms": 34.69109940051566,
+            "model_bytes": 241855
+          }
+        }
+      ],
+      "functional_feasible_ids": [
+        "RULE_noise_t2_d0.5_c2",
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2",
+        "RF_f3_p3_d0.5_c2"
+      ],
+      "pareto_ids": [
+        "RULE_noise_t2_d0.5_c2",
+        "DT_f3_p2_d0.5_c2",
+        "KNN_f3_p1_d0.5_c2"
+      ],
+      "pareto_vectors": [
+        {
+          "config_id": "RULE_noise_t2_d0.5_c2",
+          "confirmed_delay_s": 7.9901198309996175,
+          "processing_phase_p95_max_ms": 2.9773311007374996,
+          "model_bytes": 79
+        },
+        {
+          "config_id": "DT_f3_p2_d0.5_c2",
+          "confirmed_delay_s": 1.987471914002242,
+          "processing_phase_p95_max_ms": 21.999183400475886,
+          "model_bytes": 1856
+        },
+        {
+          "config_id": "KNN_f3_p1_d0.5_c2",
+          "confirmed_delay_s": 2.990056163001725,
+          "processing_phase_p95_max_ms": 15.145383548406244,
+          "model_bytes": 12063
+        }
+      ],
+      "posthoc_illustrative_budget": {
+        "status": "POST_HOC_ILLUSTRATIVE_NOT_HISTORICAL_NOT_APPLICATION_STANDARD",
+        "processing_phase_p95_max_ms_le": 50,
+        "model_bytes_le": 10240,
+        "resource_excluded_after_functional": [
+          {
+            "config_id": "KNN_f3_p1_d0.5_c2",
+            "exceeds_p95_cap": false,
+            "exceeds_model_size_cap": true
+          },
+          {
+            "config_id": "RF_f3_p3_d0.5_c2",
+            "exceeds_p95_cap": false,
+            "exceeds_model_size_cap": true
+          }
+        ],
+        "feasible_ids": [
+          "RULE_noise_t2_d0.5_c2",
+          "DT_f3_p2_d0.5_c2"
+        ],
+        "pareto_ids": [
+          "RULE_noise_t2_d0.5_c2",
+          "DT_f3_p2_d0.5_c2"
+        ],
+        "pareto_vectors": [
+          {
+            "config_id": "RULE_noise_t2_d0.5_c2",
+            "confirmed_delay_s": 7.9901198309996175,
+            "processing_phase_p95_max_ms": 2.9773311007374996,
+            "model_bytes": 79
+          },
+          {
+            "config_id": "DT_f3_p2_d0.5_c2",
+            "confirmed_delay_s": 1.987471914002242,
+            "processing_phase_p95_max_ms": 21.999183400475886,
+            "model_bytes": 1856
+          }
+        ]
+      }
+    }
+  ],
+  "evidence": "INSUFFICIENT EVIDENCE",
+  "limits": [
+    "One development jamming episode; ML fit included later rows of same episode.",
+    "Rule constants and pilot subset selected after development inspection.",
+    "Execution delay is historical event-ready clock relative to annotated onset, not physical jammer-on.",
+    "Resource percentiles are one-run descriptive values, not confidence bounds or deadline guarantees.",
+    "Cgroup RAM is sampled maximum, not true peak; driver is outside detector quota.",
+    "No new fitting, inference, Docker or measurements executed."
+  ]
+}

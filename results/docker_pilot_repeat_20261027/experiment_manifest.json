@@ -1,0 +1,611 @@
+{
+  "protocol": "docker-pilot-v1",
+  "source_run_label": "repeat_20261027_r1",
+  "run_status": "COMPLETE",
+  "configs": [
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "decision_threshold": 0.5,
+      "confirmation_count": 2,
+      "candidate_id": "RULE_noise_t2",
+      "algorithm": "RULE",
+      "features": [
+        "noise_per_ms"
+      ],
+      "profile": {
+        "relative_threshold": 0.5,
+        "combination": "single"
+      },
+      "thresholds": [
+        0.5
+      ],
+      "training": "no supervised fit; calibration-only online; exploratory preselected constants",
+      "causal": true,
+      "model_bytes": 79,
+      "fit_rows": 0
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "decision_threshold": 0.5,
+      "confirmation_count": 2,
+      "candidate_id": "DT_f3_p2",
+      "algorithm": "DT",
+      "features": [
+        "noise_per_ms",
+        "eph"
+      ],
+      "profile": {
+        "max_depth": 3
+      },
+      "thresholds": [
+        0.5,
+        0.75
+      ],
+      "training": "development in-sample; future attack rows included",
+      "causal": false,
+      "model_bytes": 1856,
+      "fit_rows": 299,
+      "nodes": 9,
+      "depth": 3
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "decision_threshold": 0.5,
+      "confirmation_count": 2,
+      "candidate_id": "KNN_f3_p1",
+      "algorithm": "KNN",
+      "features": [
+        "noise_per_ms",
+        "eph"
+      ],
+      "profile": {
+        "n_neighbors": 3
+      },
+      "thresholds": [
+        0.5,
+        0.75
+      ],
+      "training": "development in-sample; future attack rows included",
+      "causal": false,
+      "model_bytes": 12063,
+      "fit_rows": 299,
+      "stored_samples": 299,
+      "stored_array_bytes": 7176
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "decision_threshold": 0.0,
+      "confirmation_count": 2,
+      "candidate_id": "SVM_f3_p2",
+      "algorithm": "SVM",
+      "features": [
+        "noise_per_ms",
+        "eph"
+      ],
+      "profile": {
+        "C": 1.0
+      },
+      "thresholds": [
+        0.0,
+        0.5
+      ],
+      "training": "development in-sample; future attack rows included",
+      "causal": false,
+      "model_bytes": 2867,
+      "fit_rows": 299,
+      "support_vectors": 35
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "decision_threshold": 0.5,
+      "confirmation_count": 2,
+      "candidate_id": "RF_f3_p3",
+      "algorithm": "RF",
+      "features": [
+        "noise_per_ms",
+        "eph"
+      ],
+      "profile": {
+        "n_estimators": 200,
+        "max_depth": 5
+      },
+      "thresholds": [
+        0.5,
+        0.75
+      ],
+      "training": "development in-sample; future attack rows included",
+      "causal": false,
+      "model_bytes": 241855,
+      "fit_rows": 299,
+      "trees": 200,
+      "nodes": 2308,
+      "depth": 5
+    }
+  ],
+  "profiles": [
+    {
+      "id": "guarded_reference",
+      "cpu_quota_us": null,
+      "memory_mib": 1536
+    },
+    {
+      "id": "cpu1_ram512",
+      "cpu_quota_us": 100000,
+      "memory_mib": 512
+    },
+    {
+      "id": "cpu05_ram512",
+      "cpu_quota_us": 50000,
+      "memory_mib": 512
+    },
+    {
+      "id": "cpu025_ram512",
+      "cpu_quota_us": 25000,
+      "memory_mib": 512
+    }
+  ],
+  "cpu_period_us": 100000,
+  "seed": 42,
+  "technical_attempts_per_pair": 1,
+  "planned_order": [
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 1
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 2
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 3
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 4
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 5
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 6
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 7
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 8
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 9
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 10
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 11
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 12
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 13
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 14
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 15
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 16
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 17
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 18
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 19
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 20
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 21
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 22
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 23
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 24
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 25
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 26
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 27
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 28
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 29
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 30
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 31
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 32
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 33
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 34
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 35
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 36
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 37
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 38
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 39
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 40
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 41
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 42
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 43
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 44
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 45
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 46
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 47
+    },
+    {
+      "config_id": "KNN_f3_p1_d0.5_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 48
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 49
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 50
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 51
+    },
+    {
+      "config_id": "RF_f3_p3_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 52
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 53
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 54
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "jamming",
+      "technical_trial": 1,
+      "planned_sequence": 55
+    },
+    {
+      "config_id": "DT_f3_p2_d0.5_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 56
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu025_ram512",
+      "session_id": "benign",
+      "technical_trial": 1,
+      "planned_sequence": 57
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "guarded_reference",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 58
+    },
+    {
+      "config_id": "RULE_noise_t2_d0.5_c2",
+      "profile_id": "cpu05_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 59
+    },
+    {
+      "config_id": "SVM_f3_p2_d0_c2",
+      "profile_id": "cpu1_ram512",
+      "session_id": "spoofing",
+      "technical_trial": 1,
+      "planned_sequence": 60
+    }
+  ],
+  "calibration": {
+    "seconds": 30,
+    "minimum_observations": 25,
+    "baseline": "median of clean calibration observations",
+    "normalization": "(x-baseline)/baseline; no epsilon"
+  },
+  "recovery_negatives": 2,
+  "maximum_observation_gap_s": 1.5,
+  "policy": {
+    "protocol_version": "docker-pilot-v1",
+    "policy_status": "AUTHOR_DEFINED_ENGINEERING_POLICIES_FREEZE_BEFORE_MEASUREMENT",
+    "ingress_capacity_messages": 16,
+    "overflow_policy": "drop_new_and_record_in_scope_pipeline_failure",
+    "socket_buffer_bytes_requested": 4096,
+    "maximum_frame_bytes": 16384,
+    "socket_timeout_s": 5,
+    "startup_timeout_s": 60,
+    "completion_grace_s": 30,
+    "host_timeout_extra_s": 120,
+    "source_lateness_p95_limit_ms": 100,
+    "source_lateness_max_limit_ms": 250,
+    "external_monitor_interval_s": 0.1,
+    "clock_ping_count": 5,
+    "clock_ping_rtt_limit_ms": 50,
+    "clock_ping_rtt_rule": "minimum_of_five_for_clock_precision; all_intervals_recorded; slow_quota_response_not_source_invalidity",
+    "score_atol": 1e-12,
+    "score_rtol": 1e-12,
+    "calibration_capacity_observations": 128,
+    "detector_history_capacity": 1,
+    "processing_delay_ms": 0,
+    "driver_memory_mib": 512,
+    "driver_cpu_quota": null,
+    "evidence_loss_policy": "incomplete_evidence_never_passes",
+    "physical_transport_included": false,
+    "watchdog_changes_detector_semantics": false,
+    "independent_validation": false
+  },
+  "independent_validation": false,
+  "source_inputs_shipped": false
+}

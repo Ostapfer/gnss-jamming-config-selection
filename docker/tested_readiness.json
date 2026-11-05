@@ -1,0 +1,72 @@
+{
+  "status": "READINESS_TESTED_NOT_BENCHMARKED",
+  "tested_utc": "2026-10-26T11:45:27.403114428Z",
+  "compose_service": "readiness",
+  "image_id": "sha256:9655423c10c1b9c522c89ba4e21e1736e25f63e7b901bab89c1db18e1e1ff3f3",
+  "platform": "linux/arm64",
+  "base_image": "python:3.12.12-slim-bookworm@sha256:593bd06efe90efa80dc4eee3948be7c0fde4134606dd40d8dd8dbcade98e669c",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "psutil": "7.2.2"
+  },
+  "python": "3.12.12",
+  "kernel": "Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36",
+  "cpu_quota_us": 100000,
+  "cpu_period_us": 100000,
+  "memory_bytes": 536870912,
+  "memory_swap_total_bytes": 536870912,
+  "actual_cgroups": {
+    "cpu.max": "100000 100000",
+    "memory.max": "536870912",
+    "memory.swap.max": "0",
+    "memory.current": "17670144",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0"
+  },
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "model_smoke": [
+    {
+      "candidate_id": "RULE_noise_t2",
+      "model_sha256": "e4c7c8d73fd6c98459a4ac009bed5e348cfe63c20e67bea8fbe46d4accc20685",
+      "smoke_prediction_finite": true
+    },
+    {
+      "candidate_id": "DT_f3_p2",
+      "model_sha256": "c4e136ce2a26e1c7a210aee1b1e71eb39f88bd18720ae6349229cd20d8d9c242",
+      "smoke_prediction_finite": true
+    },
+    {
+      "candidate_id": "SVM_f3_p2",
+      "model_sha256": "0c4c573287b9d51b5ae357ea9af57322e11e1b5bb3949e0939249e3ad6a15489",
+      "smoke_prediction_finite": true
+    },
+    {
+      "candidate_id": "KNN_f3_p1",
+      "model_sha256": "4d3e2f56f4404ddeb15ada84844a508d89289decbac68da87771c21d07d26f13",
+      "smoke_prediction_finite": true
+    },
+    {
+      "candidate_id": "RF_f3_p3",
+      "model_sha256": "04689163a734fec51b6568df32707cf447f48ca33b1896881dd162647206a91e",
+      "smoke_prediction_finite": true
+    }
+  ],
+  "exit_code": 0,
+  "oom_killed": false,
+  "full_experiment_run": false,
+  "planned_profiles_tested": false,
+  "compose_matrix_parse_services": 11,
+  "files_sha256": {
+    "compose.yaml": "3e8f027e5cea282a2b488b748880995b71f8ec07c0ba09b2e6e74dad24cc3ca9",
+    "compose.limits.yaml": "95b6b2edf4a5f59d15206059a837651273180e542985429f61e2a83368725ffd",
+    "image/Dockerfile": "a8265a866b439a73f66dc83b68b2f25ef8ad4f96473cdd90f1f59592a618f917",
+    "image/probe.py": "54f24be0787dde3f51ea42f63dc88635d252f6d88a467c44ec959e0500b9641b",
+    "image/requirements-lock.txt": "3f9b27ce4b84186bb87485a91bead2f0ae1ae486de568c7ffc0104a155729113"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "ARTICLE_RESULTS_DRAFT.md": "943257a4c876418ca181b438ca14ccdeb417837feed47cc447dea21f197043e8",
+    "README.md": "608c4ebae5b24e5eb4458341a034f2026159a79a67343b0b1b91f45f33fd9848",
+    "REPORT.md": "992db32eeaf3a2c1635f8cda3d3af68b3ac77dc436fa694f9b126e820e9bbe0f",
+    "experiment_manifest.json": "2ae94d6cb011ec1beb3bc2401b4ca2f74c8a7c1b0453640593da0be7415b6d67",
+    "figures/active_state_windows.png": "825b22a0a7cd1e7fd6ad371a064b2a62d536037d8aea3d77d34676d6c206fb0c",
+    "figures/memory_and_model_size.png": "3cdd0f6aacb61a848d3a0650338873a5918c7059d6a18980b2b3b060d385185d",
+    "figures/quota_delay_and_processing.png": "645ad589e555cebe0526b5bc4597cb2f3489b626800d4b6e9de672081ae38716",
+    "figures/startup_and_postcal_cpu.png": "512ff108ef9513f01355f1b2b1875d2e8eb2dc3dbb4a83abfc4f661f9af35035",
+    "platform.json": "f5bf35dd6f5361b893d767e18406b1d1b7302ebfa2bd0ea10e917d92ad53347d",
+    "provenance.json": "a44bec1e9a2c5ef2f449bf8ff872e15847e8b23b5dcd2b7aefd1fd363e393907",
+    "summary.json": "ca5da1fe9dc9911ea9d762cbb818aeb9603e65bfa72bda0be4bf80edd14a0f44",
+    "tables/conditions.csv": "d94eca583d3cf724c00f1d3cafdb179d73aa2819b161f362016b7dd6467d5d3b",
+    "tables/config_profiles.csv": "c48e3ea34e39a1033e9469d42ba5eefa851b6fb9cdf79579b9e18a0defe550c3",
+    "tables/events.csv": "15b62021498434bbfa04c973aed5a109fc181cebf843a1e4e93021b3298490c4",
+    "tables/functional_scenarios.csv": "a37bded5d588e25d6034c493b71bed7c4f4c33844949eeda080abf21e3c20ae8",
+    "tables/latency_conditions.csv": "b10ca088878c0a67c2c8a5c19ccb0497fbc79b7046913f2d633fe709a43118c0",
+    "tables/pareto_descriptive.csv": "c2553bd046edf5dcb3cfb05cacf010a193ef85d38e1be2a17538265c4af17940",
+    "tables/trace_integrity.csv": "99aee92574e205652710b926a90bf4d6064ae68866f7324471d06822e1e8da27",
+    "tables/trials.csv": "063c6a4d92b1aa20295bd673337574930e7639c9749c617514145a853dbba440",
+    "tables/triggering_messages.csv": "564a8a450d54e8361376bb1fa8f304fc943b3297f4483f959eae2d8b0f59545c",
+    "verification.json": "7948c656556fe9c239c1369538b7985e2194e5b0182199ce5bdcad2a05cebe24"
+  },
+  "scope": "Analysis outputs; rendering caches and self-reference excluded"
+}

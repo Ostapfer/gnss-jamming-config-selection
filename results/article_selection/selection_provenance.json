@@ -1,0 +1,37 @@
+{
+  "source_sha256": {
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/tables/latency_conditions.csv": "b10ca088878c0a67c2c8a5c19ccb0497fbc79b7046913f2d633fe709a43118c0",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/tables/trials.csv": "063c6a4d92b1aa20295bd673337574930e7639c9749c617514145a853dbba440",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/tables/functional_scenarios.csv": "a37bded5d588e25d6034c493b71bed7c4f4c33844949eeda080abf21e3c20ae8",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/tables/trace_integrity.csv": "99aee92574e205652710b926a90bf4d6064ae68866f7324471d06822e1e8da27",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/tables/pareto_descriptive.csv": "c2553bd046edf5dcb3cfb05cacf010a193ef85d38e1be2a17538265c4af17940",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/tables/config_profiles.csv": "c48e3ea34e39a1033e9469d42ba5eefa851b6fb9cdf79579b9e18a0defe550c3",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/tables/conditions.csv": "d94eca583d3cf724c00f1d3cafdb179d73aa2819b161f362016b7dd6467d5d3b",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/tables/events.csv": "15b62021498434bbfa04c973aed5a109fc181cebf843a1e4e93021b3298490c4",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/tables/triggering_messages.csv": "564a8a450d54e8361376bb1fa8f304fc943b3297f4483f959eae2d8b0f59545c",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/experiment_manifest.json": "2ae94d6cb011ec1beb3bc2401b4ca2f74c8a7c1b0453640593da0be7415b6d67",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/platform.json": "f5bf35dd6f5361b893d767e18406b1d1b7302ebfa2bd0ea10e917d92ad53347d",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/provenance.json": "a44bec1e9a2c5ef2f449bf8ff872e15847e8b23b5dcd2b7aefd1fd363e393907",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/verification.json": "7948c656556fe9c239c1369538b7985e2194e5b0182199ce5bdcad2a05cebe24",
+    "gnss-jamming-config-selection/results/docker_pilot_repeat_20261027/artifact_manifest.json": "19029eed5a95a88fac5a51196a0fb3cfffe5b38d9f8c59bce44a68dd4d15c091",
+    "gnss-jamming-config-selection/scripts/analyze_docker_pilot.py": "b0b2ba3cbc919270bbb1e7f37a11cd9bbef8d6af8e0095668558550bf6b8b90d",
+    "gnss-jamming-config-selection/src/gnss_jamming/pilot_runtime.py": "5984adb228fdea910801b1bdf936f24e92595db604465a928d05b7da527f9ae1"
+  },
+  "historical_sources_unchanged": true,
+  "script_sha256": "cc0e1d8a48a7af3eb742c4cb853048325e113d028315f48f7a2a783890403889",
+  "checks": {
+    "vectors": 20,
+    "technical_trials": 60,
+    "phase_max_matches_summary": true,
+    "condition_FAR_recomputed": true,
+    "functional_status_matches_frozen_grid": true,
+    "pareto_matches_frozen_front": true
+  },
+  "outputs_sha256": {
+    "selection_vectors.csv": "3239e869b3de514768240229048f3ee8791750eeb6593a6002f9e1bb442539f1",
+    "selection_example.json": "f7cfd877c5d4a09acf41f43c04d5fcb93275184369f78d325658b50fe5c61775",
+    "selection_example_UK.md": "e4a3e6c699f69a5a419aabe12a3a257e650fb6adafa994999bf7c95dab24e123"
+  },
+  "execution": "python3 article/20261103_revision/selection_extract.py; stdlib CSV/JSON arithmetic only",
+  "illustrative_scope_review": "ACCEPT by owner_contacts_validation, internal message 2026-11-03; preserve unbudgeted results and post-hoc labels"
+}

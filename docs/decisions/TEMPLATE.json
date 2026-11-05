@@ -1,0 +1,15 @@
+{
+  "decision_id": "REPLACE_WITH_ID",
+  "question": "",
+  "scope": "",
+  "research": {"proposal": "", "alternatives": [], "assumptions": []},
+  "design_review_round_1": {"findings": [], "acceptance_criteria": []},
+  "evidence_validation": {"report": "", "verified_source_ids": [], "counterevidence": [], "unsupported_claims": []},
+  "design_review_round_2": {"report": "", "verdict": "PENDING", "reason": ""},
+  "design_gate": "PENDING",
+  "experiment_implementation": {"status": "NOT_STARTED", "acceptance_checks": []},
+  "measurement_gate": "NOT_READY",
+  "article_handoff": {"claim_map": "", "references": ""},
+  "prior_frozen_artifacts_preserved": true,
+  "notes": "ACCEPT_FOR_IMPLEMENTATION permits the scoped engineering work and integration checks. It does not mark scientific measurement or hardware fidelity as validated."
+}

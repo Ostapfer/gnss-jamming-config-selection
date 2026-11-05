@@ -1,0 +1,6 @@
+session_id,state,raw_count
+benign,benign,248
+jamming,benign,174
+jamming,jamming,50
+spoofing,benign,119
+spoofing,spoofing,19

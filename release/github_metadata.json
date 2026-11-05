@@ -1,0 +1,6 @@
+{
+  "name": "gnss-jamming-config-selection",
+  "description": "Resource-aware GNSS jamming detector selection: event-level replay, Docker CPU/RAM measurements, audited IGASPIN transfer and reproducibility guides. Data and weights excluded.",
+  "visibility": "private",
+  "version": "1.0.0"
+}

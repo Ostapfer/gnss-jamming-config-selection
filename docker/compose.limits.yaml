@@ -1,0 +1,92 @@
+# Planned readiness profiles; NOT completed benchmarks.
+services:
+  cpu1_ram1024:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: 100000
+    mem_limit: 1024m
+    memswap_limit: 1024m
+    command: [--expected-cpu, '1', --expected-memory-mib, '1024']
+  cpu1_ram512:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: 100000
+    mem_limit: 512m
+    memswap_limit: 512m
+    command: [--expected-cpu, '1', --expected-memory-mib, '512']
+  cpu1_ram256:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: 100000
+    mem_limit: 256m
+    memswap_limit: 256m
+    command: [--expected-cpu, '1', --expected-memory-mib, '256']
+  cpu05_ram1024:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: 50000
+    mem_limit: 1024m
+    memswap_limit: 1024m
+    command: [--expected-cpu, '0.5', --expected-memory-mib, '1024']
+  cpu05_ram512:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: 50000
+    mem_limit: 512m
+    memswap_limit: 512m
+    command: [--expected-cpu, '0.5', --expected-memory-mib, '512']
+  cpu05_ram256:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: 50000
+    mem_limit: 256m
+    memswap_limit: 256m
+    command: [--expected-cpu, '0.5', --expected-memory-mib, '256']
+  cpu025_ram1024:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: 25000
+    mem_limit: 1024m
+    memswap_limit: 1024m
+    command: [--expected-cpu, '0.25', --expected-memory-mib, '1024']
+  cpu025_ram512:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: 25000
+    mem_limit: 512m
+    memswap_limit: 512m
+    command: [--expected-cpu, '0.25', --expected-memory-mib, '512']
+  cpu025_ram256:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: 25000
+    mem_limit: 256m
+    memswap_limit: 256m
+    command: [--expected-cpu, '0.25', --expected-memory-mib, '256']
+  guarded_reference:
+    extends:
+      file: compose.yaml
+      service: readiness
+    profiles: [limits]
+    cpu_quota: -1
+    mem_limit: 1536m
+    memswap_limit: 1536m
+    command: [--expected-cpu, '0', --expected-memory-mib, '1536']

@@ -1,0 +1,158 @@
+{
+  "seed": 42,
+  "calibration_s": 30,
+  "minimum_calibration_observations": 25,
+  "max_allowed_gap_s": 1.5,
+  "confirmation_counts": [
+    1,
+    2,
+    3
+  ],
+  "primary_confirmation": 2,
+  "recovery_negatives": 2,
+  "probability_thresholds": [
+    0.5,
+    0.75
+  ],
+  "svm_margin_thresholds": [
+    0.0,
+    0.5
+  ],
+  "rule_relative_thresholds": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "rule_combo": "noise_rel >= threshold AND eph_rel >= threshold",
+  "feature_sets": [
+    [
+      "noise_per_ms"
+    ],
+    [
+      "eph"
+    ],
+    [
+      "noise_per_ms",
+      "eph"
+    ],
+    [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ]
+  ],
+  "profiles": {
+    "DT": [
+      {
+        "max_depth": 2
+      },
+      {
+        "max_depth": 3
+      },
+      {
+        "max_depth": 5
+      }
+    ],
+    "KNN": [
+      {
+        "n_neighbors": 3
+      },
+      {
+        "n_neighbors": 5
+      },
+      {
+        "n_neighbors": 9
+      }
+    ],
+    "SVM": [
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 10.0
+      }
+    ],
+    "RF": [
+      {
+        "n_estimators": 20,
+        "max_depth": 3
+      },
+      {
+        "n_estimators": 50,
+        "max_depth": 5
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": 5
+      }
+    ]
+  },
+  "ml_fit_policy": "all post-calibration jamming/spoofing development rows; diagnostic in-sample replay; not causal validation",
+  "rule_fit_policy": "fixed relative thresholds; no attack training; protocol chosen after legacy inspection, exploratory",
+  "detection_deadlines_s": [
+    3,
+    5,
+    10
+  ],
+  "detection_fraction_requirements": [
+    0.8,
+    0.9,
+    1.0
+  ],
+  "false_alarm_per_hour_requirements": [
+    0,
+    0.5,
+    1.0
+  ],
+  "resource_budgets": [
+    {
+      "name": "mac_experimental_1",
+      "pipeline_p95_ms": 1,
+      "model_bytes": 20000
+    },
+    {
+      "name": "mac_experimental_10",
+      "pipeline_p95_ms": 10,
+      "model_bytes": 1000000
+    }
+  ],
+  "benchmark": {
+    "warmup": 10,
+    "repetitions": 100,
+    "stress_hz": [
+      100,
+      1000
+    ],
+    "full_passes": 1,
+    "stress_messages": 300,
+    "resource_gate": "maximum empirical per-condition full-pipeline P95, with calibration separately reported and included conservatively when measured; no synthetic probes in gate",
+    "stress_offer_validity": "Report actual scheduled/arrival rates and producer lateness; include schedule delay in scheduled-to-ready misses; never claim sustained nominal rate when source cannot maintain it"
+  },
+  "statistical_policy": "INSUFFICIENT EVIDENCE: independence not established; no inferential bounds applied",
+  "real_time_policy": "Sequential execution: one complete threshold/confirmation detector configuration and one original-rate session per fresh measured process, independent producer process; no simultaneous candidate processing. Only listed configs receive execution-clock results; others NOT EVALUATED operationally.",
+  "protocol_version": "2.0",
+  "run_id": "v2_isolated_development",
+  "realtime_config_ids": [
+    "RULE_noise_t2_d0.5_c2",
+    "RULE_noise_eph_t2_d0.5_c2"
+  ],
+  "realtime_scope": "Two primary confirmation=2 threshold0.5 causal rules; all other configs retain information-clock diagnostic replay and per-config resource measurements only",
+  "delay_aggregation": "worst confirmed execution delay across all eligible sessions; any missed/readiness-failed episode = infinity",
+  "primary_scenario": {
+    "X": 1.0,
+    "T_s": 10,
+    "Y_per_h": 0,
+    "budget": "mac_experimental_10"
+  }
+}

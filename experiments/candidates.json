@@ -1,0 +1,1424 @@
+[
+  {
+    "candidate_id": "DT_f1_p1",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "max_depth": 2
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1696,
+    "fit_rows": 299,
+    "nodes": 7,
+    "depth": 2
+  },
+  {
+    "candidate_id": "DT_f1_p2",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1856,
+    "fit_rows": 299,
+    "nodes": 9,
+    "depth": 3
+  },
+  {
+    "candidate_id": "DT_f1_p3",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2336,
+    "fit_rows": 299,
+    "nodes": 15,
+    "depth": 5
+  },
+  {
+    "candidate_id": "KNN_f1_p1",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "n_neighbors": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 9407,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 4784
+  },
+  {
+    "candidate_id": "KNN_f1_p2",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "n_neighbors": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 9407,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 4784
+  },
+  {
+    "candidate_id": "KNN_f1_p3",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "n_neighbors": 9
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 9407,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 4784
+  },
+  {
+    "candidate_id": "SVM_f1_p1",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "C": 0.1
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 3235,
+    "fit_rows": 299,
+    "support_vectors": 59
+  },
+  {
+    "candidate_id": "SVM_f1_p2",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "C": 1.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2563,
+    "fit_rows": 299,
+    "support_vectors": 35
+  },
+  {
+    "candidate_id": "SVM_f1_p3",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "C": 10.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2395,
+    "fit_rows": 299,
+    "support_vectors": 29
+  },
+  {
+    "candidate_id": "RF_f1_p1",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "n_estimators": 20,
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 19448,
+    "fit_rows": 299,
+    "trees": 20,
+    "nodes": 156,
+    "depth": 3
+  },
+  {
+    "candidate_id": "RF_f1_p2",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "n_estimators": 50,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 61098,
+    "fit_rows": 299,
+    "trees": 50,
+    "nodes": 572,
+    "depth": 5
+  },
+  {
+    "candidate_id": "RF_f1_p3",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "n_estimators": 200,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 241695,
+    "fit_rows": 299,
+    "trees": 200,
+    "nodes": 2306,
+    "depth": 5
+  },
+  {
+    "candidate_id": "DT_f2_p1",
+    "algorithm": "DT",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "max_depth": 2
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1536,
+    "fit_rows": 299,
+    "nodes": 5,
+    "depth": 2
+  },
+  {
+    "candidate_id": "DT_f2_p2",
+    "algorithm": "DT",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1856,
+    "fit_rows": 299,
+    "nodes": 9,
+    "depth": 3
+  },
+  {
+    "candidate_id": "DT_f2_p3",
+    "algorithm": "DT",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2496,
+    "fit_rows": 299,
+    "nodes": 17,
+    "depth": 5
+  },
+  {
+    "candidate_id": "KNN_f2_p1",
+    "algorithm": "KNN",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "n_neighbors": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 9407,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 4784
+  },
+  {
+    "candidate_id": "KNN_f2_p2",
+    "algorithm": "KNN",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "n_neighbors": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 9407,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 4784
+  },
+  {
+    "candidate_id": "KNN_f2_p3",
+    "algorithm": "KNN",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "n_neighbors": 9
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 9407,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 4784
+  },
+  {
+    "candidate_id": "SVM_f2_p1",
+    "algorithm": "SVM",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "C": 0.1
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 3207,
+    "fit_rows": 299,
+    "support_vectors": 58
+  },
+  {
+    "candidate_id": "SVM_f2_p2",
+    "algorithm": "SVM",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "C": 1.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2535,
+    "fit_rows": 299,
+    "support_vectors": 34
+  },
+  {
+    "candidate_id": "SVM_f2_p3",
+    "algorithm": "SVM",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "C": 10.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2395,
+    "fit_rows": 299,
+    "support_vectors": 29
+  },
+  {
+    "candidate_id": "RF_f2_p1",
+    "algorithm": "RF",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "n_estimators": 20,
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 21208,
+    "fit_rows": 299,
+    "trees": 20,
+    "nodes": 178,
+    "depth": 3
+  },
+  {
+    "candidate_id": "RF_f2_p2",
+    "algorithm": "RF",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "n_estimators": 50,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 65418,
+    "fit_rows": 299,
+    "trees": 50,
+    "nodes": 626,
+    "depth": 5
+  },
+  {
+    "candidate_id": "RF_f2_p3",
+    "algorithm": "RF",
+    "features": [
+      "eph"
+    ],
+    "profile": {
+      "n_estimators": 200,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 259455,
+    "fit_rows": 299,
+    "trees": 200,
+    "nodes": 2528,
+    "depth": 5
+  },
+  {
+    "candidate_id": "DT_f3_p1",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "max_depth": 2
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1536,
+    "fit_rows": 299,
+    "nodes": 5,
+    "depth": 2
+  },
+  {
+    "candidate_id": "DT_f3_p2",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1856,
+    "fit_rows": 299,
+    "nodes": 9,
+    "depth": 3
+  },
+  {
+    "candidate_id": "DT_f3_p3",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2176,
+    "fit_rows": 299,
+    "nodes": 13,
+    "depth": 5
+  },
+  {
+    "candidate_id": "KNN_f3_p1",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "n_neighbors": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 12063,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 7176
+  },
+  {
+    "candidate_id": "KNN_f3_p2",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "n_neighbors": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 12063,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 7176
+  },
+  {
+    "candidate_id": "KNN_f3_p3",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "n_neighbors": 9
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 12063,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 7176
+  },
+  {
+    "candidate_id": "SVM_f3_p1",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "C": 0.1
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 3731,
+    "fit_rows": 299,
+    "support_vectors": 59
+  },
+  {
+    "candidate_id": "SVM_f3_p2",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "C": 1.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2867,
+    "fit_rows": 299,
+    "support_vectors": 35
+  },
+  {
+    "candidate_id": "SVM_f3_p3",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "C": 10.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2435,
+    "fit_rows": 299,
+    "support_vectors": 23
+  },
+  {
+    "candidate_id": "RF_f3_p1",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "n_estimators": 20,
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 20248,
+    "fit_rows": 299,
+    "trees": 20,
+    "nodes": 166,
+    "depth": 3
+  },
+  {
+    "candidate_id": "RF_f3_p2",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "n_estimators": 50,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 61418,
+    "fit_rows": 299,
+    "trees": 50,
+    "nodes": 576,
+    "depth": 5
+  },
+  {
+    "candidate_id": "RF_f3_p3",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "n_estimators": 200,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 241855,
+    "fit_rows": 299,
+    "trees": 200,
+    "nodes": 2308,
+    "depth": 5
+  },
+  {
+    "candidate_id": "DT_f4_p1",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "max_depth": 2
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1536,
+    "fit_rows": 299,
+    "nodes": 5,
+    "depth": 2
+  },
+  {
+    "candidate_id": "DT_f4_p2",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1856,
+    "fit_rows": 299,
+    "nodes": 9,
+    "depth": 3
+  },
+  {
+    "candidate_id": "DT_f4_p3",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2016,
+    "fit_rows": 299,
+    "nodes": 11,
+    "depth": 4
+  },
+  {
+    "candidate_id": "KNN_f4_p1",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "n_neighbors": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 14719,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 9568
+  },
+  {
+    "candidate_id": "KNN_f4_p2",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "n_neighbors": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 14719,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 9568
+  },
+  {
+    "candidate_id": "KNN_f4_p3",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "n_neighbors": 9
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 14719,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 9568
+  },
+  {
+    "candidate_id": "SVM_f4_p1",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "C": 0.1
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 4183,
+    "fit_rows": 299,
+    "support_vectors": 58
+  },
+  {
+    "candidate_id": "SVM_f4_p2",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "C": 1.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 3215,
+    "fit_rows": 299,
+    "support_vectors": 36
+  },
+  {
+    "candidate_id": "SVM_f4_p3",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "C": 10.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2819,
+    "fit_rows": 299,
+    "support_vectors": 27
+  },
+  {
+    "candidate_id": "RF_f4_p1",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "n_estimators": 20,
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 21048,
+    "fit_rows": 299,
+    "trees": 20,
+    "nodes": 176,
+    "depth": 3
+  },
+  {
+    "candidate_id": "RF_f4_p2",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "n_estimators": 50,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 65258,
+    "fit_rows": 299,
+    "trees": 50,
+    "nodes": 624,
+    "depth": 5
+  },
+  {
+    "candidate_id": "RF_f4_p3",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv"
+    ],
+    "profile": {
+      "n_estimators": 200,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 256735,
+    "fit_rows": 299,
+    "trees": 200,
+    "nodes": 2494,
+    "depth": 5
+  },
+  {
+    "candidate_id": "DT_f5_p1",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "max_depth": 2
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1536,
+    "fit_rows": 299,
+    "nodes": 5,
+    "depth": 2
+  },
+  {
+    "candidate_id": "DT_f5_p2",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1696,
+    "fit_rows": 299,
+    "nodes": 7,
+    "depth": 3
+  },
+  {
+    "candidate_id": "DT_f5_p3",
+    "algorithm": "DT",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 1856,
+    "fit_rows": 299,
+    "nodes": 9,
+    "depth": 4
+  },
+  {
+    "candidate_id": "KNN_f5_p1",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "n_neighbors": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 22687,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 16744
+  },
+  {
+    "candidate_id": "KNN_f5_p2",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "n_neighbors": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 22687,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 16744
+  },
+  {
+    "candidate_id": "KNN_f5_p3",
+    "algorithm": "KNN",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "n_neighbors": 9
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 22687,
+    "fit_rows": 299,
+    "stored_samples": 299,
+    "stored_array_bytes": 16744
+  },
+  {
+    "candidate_id": "SVM_f5_p1",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "C": 0.1
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 5443,
+    "fit_rows": 299,
+    "support_vectors": 55
+  },
+  {
+    "candidate_id": "SVM_f5_p2",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "C": 1.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 3267,
+    "fit_rows": 299,
+    "support_vectors": 23
+  },
+  {
+    "candidate_id": "SVM_f5_p3",
+    "algorithm": "SVM",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "C": 10.0
+    },
+    "thresholds": [
+      0.0,
+      0.5
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 2655,
+    "fit_rows": 299,
+    "support_vectors": 14
+  },
+  {
+    "candidate_id": "RF_f5_p1",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "n_estimators": 20,
+      "max_depth": 3
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 21208,
+    "fit_rows": 299,
+    "trees": 20,
+    "nodes": 178,
+    "depth": 3
+  },
+  {
+    "candidate_id": "RF_f5_p2",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "n_estimators": 50,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 63178,
+    "fit_rows": 299,
+    "trees": 50,
+    "nodes": 598,
+    "depth": 5
+  },
+  {
+    "candidate_id": "RF_f5_p3",
+    "algorithm": "RF",
+    "features": [
+      "noise_per_ms",
+      "eph",
+      "epv",
+      "hdop",
+      "vdop",
+      "satellites_used"
+    ],
+    "profile": {
+      "n_estimators": 200,
+      "max_depth": 5
+    },
+    "thresholds": [
+      0.5,
+      0.75
+    ],
+    "training": "development in-sample; future attack rows included",
+    "causal": false,
+    "model_bytes": 243295,
+    "fit_rows": 299,
+    "trees": 200,
+    "nodes": 2326,
+    "depth": 5
+  },
+  {
+    "candidate_id": "RULE_noise_t1",
+    "algorithm": "RULE",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "relative_threshold": 0.25,
+      "combination": "single"
+    },
+    "thresholds": [
+      0.5
+    ],
+    "training": "no supervised fit; calibration-only online; exploratory preselected constants",
+    "causal": true,
+    "model_bytes": 79,
+    "fit_rows": 0
+  },
+  {
+    "candidate_id": "RULE_noise_t2",
+    "algorithm": "RULE",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "relative_threshold": 0.5,
+      "combination": "single"
+    },
+    "thresholds": [
+      0.5
+    ],
+    "training": "no supervised fit; calibration-only online; exploratory preselected constants",
+    "causal": true,
+    "model_bytes": 79,
+    "fit_rows": 0
+  },
+  {
+    "candidate_id": "RULE_noise_t3",
+    "algorithm": "RULE",
+    "features": [
+      "noise_per_ms"
+    ],
+    "profile": {
+      "relative_threshold": 1.0,
+      "combination": "single"
+    },
+    "thresholds": [
+      0.5
+    ],
+    "training": "no supervised fit; calibration-only online; exploratory preselected constants",
+    "causal": true,
+    "model_bytes": 79,
+    "fit_rows": 0
+  },
+  {
+    "candidate_id": "RULE_noise_eph_t1",
+    "algorithm": "RULE",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "relative_threshold": 0.25,
+      "combination": "AND"
+    },
+    "thresholds": [
+      0.5
+    ],
+    "training": "no supervised fit; calibration-only online; exploratory preselected constants",
+    "causal": true,
+    "model_bytes": 79,
+    "fit_rows": 0
+  },
+  {
+    "candidate_id": "RULE_noise_eph_t2",
+    "algorithm": "RULE",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "relative_threshold": 0.5,
+      "combination": "AND"
+    },
+    "thresholds": [
+      0.5
+    ],
+    "training": "no supervised fit; calibration-only online; exploratory preselected constants",
+    "causal": true,
+    "model_bytes": 79,
+    "fit_rows": 0
+  },
+  {
+    "candidate_id": "RULE_noise_eph_t3",
+    "algorithm": "RULE",
+    "features": [
+      "noise_per_ms",
+      "eph"
+    ],
+    "profile": {
+      "relative_threshold": 1.0,
+      "combination": "AND"
+    },
+    "thresholds": [
+      0.5
+    ],
+    "training": "no supervised fit; calibration-only online; exploratory preselected constants",
+    "causal": true,
+    "model_bytes": 79,
+    "fit_rows": 0
+  }
+]

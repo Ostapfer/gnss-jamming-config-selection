@@ -1,0 +1,13 @@
+{
+  "status": "STARTED",
+  "started_utc": "2026-10-27T09:18:24.566981+00:00",
+  "manifest_sha256": "af42148dce6e0fcc0706242195310d4831187c23e498515c9c3f3c2d274ce067",
+  "image_id": "sha256:eda35b3de2ca15569ace2a8e6eb59dc999e945e2f6fa6cfeb14d422c1f9302d5",
+  "run_directory": "docker/artifacts/pilot-v1/repeat_20261027_r1",
+  "preflight": "PASS: seven integration cases and15parity comparisons",
+  "planned_attempts": 60,
+  "prior_run_preserved": "run_20261026_r3",
+  "technical_repeat_not_independent_validation": true,
+  "measurement_gate": "VERIFIED_FOR_MEASUREMENT",
+  "results_pending": true
+}
